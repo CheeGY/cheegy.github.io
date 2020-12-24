@@ -3,4 +3,4 @@ layout: page
 title: Contact
 ---
 
-You can contact me via ckongyao@seas.upenn.edu.
+For any questions, comments or suggestions, contact me at ckongyao@seas.upenn.edu.
