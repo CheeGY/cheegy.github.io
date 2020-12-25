@@ -3,7 +3,7 @@ layout: page
 title: About
 ---
 
-![alt text](./assets/img/marina.jpg "MBS")
+![alt text](/assets/img/marina.jpg "MBS")
 
 This page serves as a consolidation of thoughts in a continual pursuit of knowledge. The posts provide details on key mathematical concepts that are important, but intermittently forgotten.
 
