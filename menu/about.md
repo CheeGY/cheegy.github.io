@@ -5,7 +5,7 @@ title: About
 
 ![alt text](C:\Users\GY\Documents\GitHub\cheegy.github.io\assets\img\marina-bay-view-purple.jpg "MBS")
 
-This page is a consolidation of thoughts in a continual pursuit of knowledge. The posts act as reference for key mathematical concepts that are important, but intermittently forgotten.
+This page serves as a consolidation of thoughts in a continual pursuit of knowledge. The posts provide details on key mathematical concepts that are important, but intermittently forgotten.
 
 ---
 
