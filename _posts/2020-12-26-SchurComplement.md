@@ -42,14 +42,19 @@ $$
 we have the following statements,
 
 $$
-M \succ 0 \Leftrightarrow A \succ 0,\;\; D - B^{T}A^{-1}B \succ 0 \Leftrightarrow D \succ 0,\;\;A - BD^{-1}B^{T} \succ 0,
+\begin{align}
+M \succ 0 &\Leftrightarrow A \succ 0,\;\; D - B^{T}A^{-1}B \succ 0 \\
+& \Leftrightarrow D \succ 0,\;\;A - BD^{-1}B^{T} \succ 0,
+\end{align}
 $$
   
-or
+and
 
 $$
-M \prec 0 \Leftrightarrow A \prec 0,\;\; D - B^{T}A^{-1}B \prec 0 \Leftrightarrow D \prec 0,\;\;A - BD^{-1}B^{T} \prec 0.
-
+\begin{align}
+M \prec 0 &\Leftrightarrow A \prec 0,\;\; D - B^{T}A^{-1}B \prec 0 \\
+&\Leftrightarrow D \prec 0,\;\;A - BD^{-1}B^{T} \prec 0.
+\end{align}
 $$ 
 
 ---
