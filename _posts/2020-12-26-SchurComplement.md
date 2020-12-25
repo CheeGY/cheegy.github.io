@@ -63,7 +63,9 @@ $$
 A^TP + PA - (PB+C^T)R^{-1}(B^TP+C)+Q \succ 0.
 $$
 
-The aim is to find a matrix $P$ that satisfies the above inequality. Utilizing the Schur Complement Lemma, this can be transformed into an LMI in $P$, which is computationally tractable and can be solved through convex optimization. By the Lemma, if $R \succ 0$, then
+The aim is to find a matrix $P$ that satisfies the above inequality. Utilizing the Schur Complement Lemma, this can be transformed into an LMI in $P$, which is computationally tractable and can be solved through convex optimization. 
+
+A direct application of the lemma tells us that, if $R \succ 0$, then
 
 $$
 \begin{bmatrix}
@@ -75,9 +77,9 @@ $$
 ---
 ### Example 2
 
-The Schur Complement Lemma can also be used to formulate LMIs into their equivalent forms. Here is a theorem in $H_{\infty}$ control synthesis that state two equivalent LMIs whose equivalence can be shown via the Schur complement Lemma,
+The Schur Complement Lemma can also be used to convert LMIs between their equivalent forms. Below is a theorem in $H_{\infty}$ control synthesis that state two LMIs whose equivalence can be shown via the Schur Complement Lemma.
 
-$\textbf{Theorem 1}:$ Suppose $G(s) = C(sI - A)^{-1}B + D$. Then $\Vert{G(s)}_{\infty} \leq \gamma$ if and only if there exists $P \succ 0$ such that either of these inequalities holds:
+$\textbf{Theorem 1}:$ Suppose $G(s) = C(sI - A)^{-1}B + D$. Then $\Vert G(s)\Vert_{\infty} \leq \gamma$ if and only if there exists $P \succ 0$ such that either of these inequalities holds:
 
 $$
 \begin{bmatrix}
