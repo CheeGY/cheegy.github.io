@@ -10,7 +10,7 @@ This note elaborates on the Schur Complement Lemma and some of its applications 
 
 ---
 
-To start off, let's define what Schur complements are.
+To start off, we define what Schur complements are.
 
 $\textbf{Definition 1}$: Given a partitioned matrix
 
@@ -19,16 +19,17 @@ M =
 \begin{bmatrix}
     A & B \\
     C & D \\
-\end{bmatrix},
+\end{bmatrix}
 $$
 
-If $A$ is nonsingular, $D - CA^{-1}B$ is the Schur complement of $A$ in $M$. 
+If $A$ is nonsingular, $D - CA^{-1}B$ is defined as the Schur complement of $A$ in $M$. 
 
-If $D$ is nonsingular, $A - BD^{-1}C$ is the Schur complement of $D$ in $M$.
+If $D$ is nonsingular, $A - BD^{-1}C$ is defined as the Schur complement of $D$ in $M$.
 
 ---
+If $M$ is symmetric, we can say more about these Schur complements with the following lemma,
 
-$\textbf{Schur Complement Lemma}:$ Suppose $M$ is symmetric
+$\textbf{Schur Complement Lemma}:$ Given a symmetric partitioned matrix
 
 $$
 M =
@@ -38,21 +39,21 @@ M =
 \end{bmatrix}.
 $$
 
-Then, we have the following equivalent statements
+we have the following statements,
 
 $$
-A \succ 0 \Leftrightarrow A \succ 0,\;\; D - B^{T}A^{-1}B \succ 0 \Leftrightarrow D \succ 0,\;\;A - BD^{-1}B^{T} \succ 0,
+M \succ 0 \Leftrightarrow A \succ 0,\;\; D - B^{T}A^{-1}B \succ 0 \Leftrightarrow D \succ 0,\;\;A - BD^{-1}B^{T} \succ 0,
 $$
   
 or
 
 $$
-A \prec 0 \Leftrightarrow A \prec 0,\;\; D - B^{T}A^{-1}B \prec 0 \Leftrightarrow D \prec 0,\;\;A - BD^{-1}B^{T} \prec 0.
+M \prec 0 \Leftrightarrow A \prec 0,\;\; D - B^{T}A^{-1}B \prec 0 \Leftrightarrow D \prec 0,\;\;A - BD^{-1}B^{T} \prec 0.
 
 $$ 
 
 ---
-## Example 1
+### Example 1
 
 As an application of the Schur complement lemma, let's consider the following form of Riccati inequalities.
 
@@ -62,7 +63,7 @@ $$
 A^TP + PA - (PB+C^T)R^{-1}(B^TP+C)+Q \succ 0
 $$
 
-Here, we want to find a matrix $P$ that satisfies the above inequality. Utilizing the Schur Complement Lemma, this can be transformed into an linear matrix inequality (LMI) in $P$, which is computationally tractable and can be solved through convex optimization. By the lemma, if $R \succ 0$, then
+Here, we want to find a matrix $P$ that satisfies the above inequality. Utilizing the Schur Complement Lemma, this can be transformed into an linear matrix inequality (LMI) in $P$, which is computationally tractable and can be solved through convex optimization. By the Lemma, if $R \succ 0$, then
 
 $$
 \begin{bmatrix}
@@ -72,9 +73,9 @@ $$
 $$
 
 ---
-## Example 2
+### Example 2
 
-The Schur Complement Lemma can also be used to formulate LMIs into their equivalent forms. Here's a theorem in $H_{\infty}$ control synthesis that state two equivalent LMIs that can be converted via the Schur complement Lemma,
+The Schur Complement Lemma can also be used to formulate LMIs into their equivalent forms. Here is a theorem in $H_{\infty}$ control synthesis that state two equivalent LMIs whose equivalence can be shown via the Schur complement Lemma,
 
 $\textbf{Theorem 1}:$ Suppose $G(s) = C(sI - A)^{-1}B + D$. Then $\Vert{G(s)}_{\infty} \leq \gamma$ if and only if there exists $P \succ 0$ such that either of these inequalities holds:
 
