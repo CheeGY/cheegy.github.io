@@ -98,7 +98,7 @@ $$
 \end{bmatrix} \prec 0.
 $$
 
-To see the equivalence, re-write the second inequality as
+To see the equivalence between the two, re-write the second inequality as
 
 $$
 \begin{bmatrix}
