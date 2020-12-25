@@ -4,7 +4,7 @@ title: "Schur Complement Lemma and some Simple Applications"
 author: "Kong Yao"
 categories: journal
 tags: [LMIs, robust control]
-image: sg1.jpg
+image: post2.jpg
 ---
 This note elaborates on the Schur Complement Lemma and some of its applications in LMIs.
 
