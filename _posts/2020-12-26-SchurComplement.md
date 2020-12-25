@@ -57,10 +57,10 @@ $$
 
 As an application of the Schur complement lemma, consider the following form of Riccati inequalities.
 
-Given that $A \in \mathbb{R}^{n\times n}, B \in \mathbb{R}^{n\times m}, C \in \mathbb{R}^{m\times n}, Q \in \mathbb{S}^n, R \in \mathbb{S}^m$ and let
+Suppose $A \in \mathbb{R}^{n\times n}, B \in \mathbb{R}^{n\times m}, C \in \mathbb{R}^{m\times n}, Q \in \mathbb{S}^n, R \in \mathbb{S}^m$ and let
 
 $$
-A^TP + PA - (PB+C^T)R^{-1}(B^TP+C)+Q \succ 0,
+A^TP + PA - (PB+C^T)R^{-1}(B^TP+C)+Q \succ 0.
 $$
 
 The aim is to find a matrix $P$ that satisfies the above inequality. Utilizing the Schur Complement Lemma, this can be transformed into an LMI in $P$, which is computationally tractable and can be solved through convex optimization. By the Lemma, if $R \succ 0$, then
