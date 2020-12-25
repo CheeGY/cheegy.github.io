@@ -3,7 +3,7 @@ layout: page
 title: About
 ---
 
-This page is a consolidation of thoughts in my continual pursuit of knowledge. The posts act as reference for key mathematical concepts that are important, but often slip my mind.
+This page is a consolidation of thoughts in a continual pursuit of knowledge. The posts act as reference for key mathematical concepts that are important, but intermittently forgotten.
 
 ---
 
