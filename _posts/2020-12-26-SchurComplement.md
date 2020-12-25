@@ -21,7 +21,10 @@ M =
     C & D \\
 \end{bmatrix},
 $$
-and if $A$ is nonsingular, $D - CA^{-1}B$ is the Schur complement of $A$ in $M$. Also, if $D$ is nonsingular, $A - BD^{-1}C$ is the Schur complement of $D$ in $M$.
+
+If $A$ is nonsingular, $D - CA^{-1}B$ is the Schur complement of $A$ in $M$. 
+
+Also, if $D$ is nonsingular, $A - BD^{-1}C$ is the Schur complement of $D$ in $M$.
 
 ---
 
@@ -44,6 +47,7 @@ $$
 A \prec 0 \Leftrightarrow A \prec 0,\;\; D - B^{T}A^{-1}B \prec 0 \Leftrightarrow D \prec 0,\;\;A - BD^{-1}B^{T} \prec 0 $$. 
 
 ---
+## Example 1
 
 As an application of the Schur complement lemma, consider the following type of Riccati inequalities,
 
@@ -53,7 +57,8 @@ $$
 A^TP + PA - (PB+C^T)R^{-1}(B^TP+C)+Q \succ 0
 $$
 
-Here, we are solving for a matrix $P$ that satisfies the above inequality. Utilizing the Schur Complement Lemma, this can be transformed into an linear matrix inequality (LMI) in $P$, which is computationally tractable and can be solved through convex optimization. By the lemma, if $R \succ 0$, then
+
+Here, we want to find a matrix $P$ that satisfies the above inequality. Utilizing the Schur Complement Lemma, this can be transformed into an linear matrix inequality (LMI) in $P$, which is computationally tractable and can be solved through convex optimization. By the lemma, if $R \succ 0$, then
 
 $$
 \begin{bmatrix}
@@ -63,6 +68,7 @@ $$
 $$
 
 ---
+## Example 2
 
 The Schur Complement Lemma can also be used to formulate LMIs into their equivalent forms. Here's a theorem in $H_{\infty}$ control synthesis that state two equivalent LMIs that can be converted via the Schur complement Lemma,
 
