@@ -27,7 +27,7 @@ If $A$ is nonsingular, $D - CA^{-1}B$ is defined as the Schur complement of $A$ 
 If $D$ is nonsingular, $A - BD^{-1}C$ is defined as the Schur complement of $D$ in $M$.
 
 ---
-If $M$ is symmetric, we can say more about these Schur complements with the following lemma,
+If $M$ is symmetric, we can say more about its relationship with its Schur complements and it is summarized in the following lemma,
 
 $\textbf{Schur Complement Lemma}:$ Given a symmetric partitioned matrix
 
