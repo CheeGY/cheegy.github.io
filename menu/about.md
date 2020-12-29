@@ -11,4 +11,4 @@ This page serves as a consolidation of thoughts in a continual pursuit of knowle
 
 ### About the author
 
-KongYao is a 2nd year PhD student in the Department of Electrical and Systems Engineering (ESE) at the University of Pennsylvania, commonly known as Penn. His academic interests lie in the intersection of control theory, optimization and machine learning.
+Kong Yao, Chee is a 2nd year PhD student in the Department of Electrical and Systems Engineering (ESE) at the University of Pennsylvania, commonly known as Penn. His academic interests lie in the intersection of control theory, optimization and machine learning.

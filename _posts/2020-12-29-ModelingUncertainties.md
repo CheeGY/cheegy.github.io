@@ -15,14 +15,15 @@ Consider a discrete-time LTI system,
 $$
 \begin{aligned}
 x(k+1) &= Ax(k) + B \epsilon(k)\\
-w(k) &= Cx(k) + \epsilon(k)
+w(k) &= Cx(k) + \epsilon(k),
 \end{aligned}
 $$
+
 where it is assumed that all eigenvalues of $A$ lie strictly inside the unit circle and $\epsilon(k)$ is assumed to be standard Gaussian noise with zero mean and covariance $R_{\epsilon}$. The Gaussian noise is assumed to be stationary.
 
 ---
 
-For the state covariance at time step $n+1$, $P_{n+1}$, by using the inner product to represent the covariance function, we have the following equivalent expressions,
+The state covariance at time step $n+1$, denoted by $P_{n+1}$, can be represented using inner products and expressed as follows,
 
 $$
 \begin{aligned}
@@ -33,10 +34,10 @@ P_{n+1} &:= \langle x(n+1), x(n+1) \rangle\\
 \end{aligned}
 $$
 
-For $n > k$, observe from the system equations that
+Observe from the system equations that for $n > k$,
 
 $$
-x(n) = A^{n-k} x(k) + F\textbf{col}\{\epsilon(k), \epsilon(k+1),\dots,\epsilon(n-1)\},
+x(n) = A^{n-k} x(k) + F\,\textbf{col}\{\epsilon(k), \epsilon(k+1),\dots,\epsilon(n-1)\},
 $$
 
 for some matrix $F$. 

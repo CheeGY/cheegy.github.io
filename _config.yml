@@ -22,7 +22,7 @@ plugins:             [jekyll-paginate, jekyll-sitemap, jekyll-feed, jekyll-seo-t
 # Customise atom feed settings (this is where Jekyll-Feed gets configuration information)
 title:		           'Knowledge Nuggets'
 description:	       'Brief notes on a wide range of topics, mostly related to control theory.'
-author:                'Kong Yao Chee'
+author:                'Kong Yao, Chee'
 
 # RSS 2.0 can be used instead of Atom by uncommenting following two lines
 #feed:
