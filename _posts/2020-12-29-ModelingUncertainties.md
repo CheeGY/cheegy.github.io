@@ -19,11 +19,11 @@ w(k) &= Cx(k) + \epsilon(k),
 \end{aligned}
 $$
 
-where it is assumed that all eigenvalues of $A$ lie strictly inside the unit circle and $\epsilon(k)$ is assumed to be standard Gaussian noise with zero mean and covariance $R_{\epsilon}$. The Gaussian noise is assumed to be stationary.
+where it is assumed that all eigenvalues of $A$ lie strictly inside the unit circle (asymptotically stable) and $\epsilon(k)$ is assumed to be standard Gaussian noise with zero mean and covariance $R_{\epsilon}$ and stationary.
 
 ---
 
-The state covariance at time step $n+1$, denoted by $P_{n+1}$, can be represented using inner products and expressed as follows,
+The state covariance at time $n+1$, denoted by $P_{n+1}$, can be represented using inner products and expressed as follows,
 
 $$
 \begin{aligned}
@@ -61,7 +61,8 @@ $$
 \begin{aligned}
 \text{Cov}(w(n),w(k)) &:= \langle w(n), w(k) \rangle \\
 &= \langle Cx(n) + \epsilon(n), Cx(k) + \epsilon(k) \rangle \\
-&= C \langle x(n), x(k) \rangle C^T + C \langle x(n), \epsilon(k) \rangle + \langle \epsilon(n), x(k) \rangle C^T + \langle \epsilon(n), \epsilon(k) \rangle.
+&= C \langle x(n), x(k) \rangle C^T + C \langle x(n), \epsilon(k) \rangle +\\
+&\quad \langle \epsilon(n), x(k) \rangle C^T + \langle \epsilon(n), \epsilon(k) \rangle.
 \end{aligned}
 $$
 
