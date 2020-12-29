@@ -16,14 +16,14 @@ $$
 \begin{aligned}
 x(k+1) &= Ax(k) + B \epsilon(k)\\
 w(k) &= Cx(k) + \epsilon(k),
-\end{aligned}
+\end{aligned} \tag{1}
 $$
 
 where it is assumed that all eigenvalues of $A$ lie strictly inside the unit circle (asymptotically stable) and $\epsilon(k)$ is assumed to be standard Gaussian noise with zero mean and covariance $R_{\epsilon}$ and stationary.
 
 ---
 
-Next, suppose $n > k$ for the following discussion. The state covariance at time $n+1$, denoted by $P_{n+1}$, can be represented using inner products and expressed as follows,
+Next, suppose $n > k$ for the following discussion. The state covariance at time $n+1$, denoted by $P_{n+1}$, can be represented using inner products
 
 $$
 \begin{aligned}
@@ -31,7 +31,7 @@ P_{n+1} :&= \langle x(n+1), x(n+1) \rangle\\
     &= \langle Ax(n) + B\epsilon(n), Ax(n) + B\epsilon(n) \rangle \\ 
     &= A \langle x(n), x(n) \rangle A^T + B \langle \epsilon(n), \epsilon(n) \rangle B^T\\ 
     &= A P_{n} A^T + B R_{\epsilon} B^T
-\end{aligned}
+\end{aligned} \tag{2}
 $$
 
 This relates the propagation of the state covariance matrix with the process dynamics, in particular $A$ and $B$ and noise covariance $R_{\epsilon}$.
