@@ -39,7 +39,7 @@ This relates the propagation of the state covariance matrix with the process dyn
 Observe from \eqref{1} that
 
 $$
-x(n) = A^{n-k} x(k) + F\,\textbf{col}\{\epsilon(k), \epsilon(k+1),\dots,\epsilon(n-1)\},
+x(n) = A^{n-k} x(k) + F\,\textbf{col}\{\epsilon(k), \epsilon(k+1),\dots,\epsilon(n-1)\}, \label{3}\tag{3}
 $$
 
 for some matrix $F$. 
@@ -49,28 +49,28 @@ Hence, we can also write the state covariance at timestep $n$ as
 $$
 \begin{aligned}
 P_{n} &= \langle x(n), x(k) \rangle \\
-    &= \langle A^{n-k} x(k) + F\textbf{col}\{\epsilon(k), \epsilon(k+1),\dots,\epsilon(n-1)\}, x(k) \rangle \\
+    &= \langle A^{n-k} x(k) + F\,\textbf{col}\{\epsilon(k), \epsilon(k+1),\dots,\epsilon(n-1)\}, x(k) \rangle \\
     &= A^{n-k} \langle x(k), x(k) \rangle + 0 \\
     &= A^{n-k} P_k.
-\end{aligned}
+\end{aligned} \label{4}\tag{4}
 $$
 
 ---
 
 Next, we derive an expression for the output covariance matrix,
-
 $$
 \begin{aligned}
 \text{Cov}(w(n),w(k)) :&= \langle w(n), w(k) \rangle \\
 &= \langle Cx(n) + \epsilon(n), Cx(k) + \epsilon(k) \rangle \\
 &= C \langle x(n), x(k) \rangle C^T + C \langle x(n), \epsilon(k) \rangle +\\
 &\quad\;\; \langle \epsilon(n), x(k) \rangle C^T + \langle \epsilon(n), \epsilon(k) \rangle.
-\end{aligned}
+\end{aligned} \label{5}\tag{5}
 $$
 
 
-For $n > k$, $\langle \epsilon(n), x(k) \rangle = 0$ and $\langle \epsilon(n), \epsilon(k) \rangle = 0$. Therefore,
+For $n > k$, $\langle \epsilon(n), x(k) \rangle = 0$ and $\langle \epsilon(n), \epsilon(k) \rangle = 0$. 
 
+Therefore,
 $$
 \begin{aligned}
 \text{Cov}(w(n),w(k)) :&= \langle w(n), w(k) \rangle \\
@@ -78,11 +78,11 @@ $$
 &= CA^{n-k}P_k C^T + C \langle A^{n-k-1} (Ax(k) + B\epsilon(k), \epsilon(k) \rangle\\
 &= CA^{n-k-1}A P_k C^T + C A^{n-k-1}B \langle \epsilon(k), \epsilon(k) \rangle\\
 &= CA^{n-k-1} \left( AP_kC^T + BR_{\epsilon}\right)\\
-\end{aligned}
+\end{aligned} \label{6}\tag{6}
 $$
 
-When $k,n \to \infty$, the state covariance $P_n$ reaches steady-state and it is a positive semi-definite matrix that satisfy the Lyapunov equation,
+When $k,n \to \infty$, the state covariance $P_n$ from \eqref{2} reaches steady-state and it is a positive semi-definite matrix that satisfy the Lyapunov equation,
 
 $$
-P_n = A P_n A^T + B R_{\epsilon} B^T.
+P_n = A P_n A^T + B R_{\epsilon} B^T. \label{7}\tag{7}
 $$
