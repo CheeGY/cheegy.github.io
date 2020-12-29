@@ -16,7 +16,7 @@ $$
 \begin{aligned}
 x(k+1) &= Ax(k) + B \epsilon(k)\\
 w(k) &= Cx(k) + \epsilon(k),
-\end{aligned} \tag{1}
+\end{aligned} \label{1}\tag{1}
 $$
 
 where it is assumed that all eigenvalues of $A$ lie strictly inside the unit circle (asymptotically stable) and $\epsilon(k)$ is assumed to be standard Gaussian noise with zero mean and covariance $R_{\epsilon}$ and stationary.
@@ -31,12 +31,12 @@ P_{n+1} :&= \langle x(n+1), x(n+1) \rangle\\
     &= \langle Ax(n) + B\epsilon(n), Ax(n) + B\epsilon(n) \rangle \\ 
     &= A \langle x(n), x(n) \rangle A^T + B \langle \epsilon(n), \epsilon(n) \rangle B^T\\ 
     &= A P_{n} A^T + B R_{\epsilon} B^T
-\end{aligned} \tag{2}
+\end{aligned} \label{2}\tag{2}
 $$
 
 This relates the propagation of the state covariance matrix with the process dynamics, in particular $A$ and $B$ and noise covariance $R_{\epsilon}$.
 
-Observe from the system equations that
+Observe from \eqref{1} that
 
 $$
 x(n) = A^{n-k} x(k) + F\,\textbf{col}\{\epsilon(k), \epsilon(k+1),\dots,\epsilon(n-1)\},
