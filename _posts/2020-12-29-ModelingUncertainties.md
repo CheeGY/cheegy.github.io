@@ -31,7 +31,7 @@ $$
 
 for some matrix $F$. 
 
-Hence, the state covariance at time $n$, $P_n$, written in terms of inner products,
+Hence, the state covariance at time $n$, $P_n$, can be written in terms of inner products as
 
 $$
 \begin{aligned}
