@@ -77,7 +77,8 @@ $$
 \begin{aligned}
 \text{Cov}(w(n),w(k)) :&= \langle w(n), w(k) \rangle \\
 &= C \langle x(n), x(k) \rangle C^T + C \langle x(n), \epsilon(k) \rangle \\
-&= CA^{n-k}P_k C^T + C \langle A^{n-k-1} (Ax(k) + B\epsilon(k), \epsilon(k) \rangle\\
+&= CA^{n-k}P_k C^T +\\
+&\quad\;\; C \langle A^{n-k-1} (Ax(k) + B\epsilon(k), \epsilon(k) \rangle\\
 &= CA^{n-k-1}A P_k C^T + C A^{n-k-1}B \langle \epsilon(k), \epsilon(k) \rangle\\
 &= CA^{n-k-1} \left( AP_kC^T + BR_{\epsilon}\right)\\
 \end{aligned} \label{6}\tag{6}
