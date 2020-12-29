@@ -31,7 +31,7 @@ $$
 
 for some matrix $F$. 
 
-Hence, the state covariance at timestep $n$, $P_n$ can be represented using inner products
+Hence, the state covariance at time $n$, $P_n$, written in terms of inner products,
 
 $$
 \begin{aligned}
@@ -42,7 +42,7 @@ P_{n} &= \langle x(n), x(k) \rangle \\
 \end{aligned} \label{3}\tag{3}
 $$
 
-Furthermore, the state covariance at time $n+1$, denoted by $P_{n+1}$, can be written as
+Furthermore, the state covariance at time $n+1$, denoted by $P_{n+1}$, can be expressed as
 
 $$
 \begin{aligned}
