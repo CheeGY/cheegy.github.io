@@ -36,8 +36,8 @@ Hence, the state covariance at timestep $n$, $P_n$ can be represented using inne
 $$
 \begin{aligned}
 P_{n} &= \langle x(n), x(k) \rangle \\
-    &= \langle A^{n-k} x(k) + F\,\textbf{col}\{\epsilon(k), \epsilon(k+1),\dots,\epsilon(n-1)\}, x(k) \rangle \\
-    &= A^{n-k} \langle x(k), x(k) \rangle + 0 \\
+    &= \langle A^{n-k} x(k) + F\,\textbf{col}\{\epsilon(k), \epsilon(k+1),\dots,\epsilon(n-1)\},\, x(k) \rangle \\
+    &= A^{n-k} \langle x(k),\, x(k) \rangle + 0 \\
     &= A^{n-k} P_k.
 \end{aligned} \label{3}\tag{3}
 $$
@@ -46,9 +46,9 @@ Furthermore, the state covariance at time $n+1$, denoted by $P_{n+1}$, can be wr
 
 $$
 \begin{aligned}
-P_{n+1} :&= \langle x(n+1), x(n+1) \rangle\\
-    &= \langle Ax(n) + B\epsilon(n), Ax(n) + B\epsilon(n) \rangle \\ 
-    &= A \langle x(n), x(n) \rangle A^T + B \langle \epsilon(n), \epsilon(n) \rangle B^T\\ 
+P_{n+1} :&= \langle x(n+1),\, x(n+1) \rangle\\
+    &= \langle Ax(n) + B\epsilon(n),\, Ax(n) + B\epsilon(n) \rangle \\ 
+    &= A \langle x(n),\, x(n) \rangle A^T + B \langle \epsilon(n),\, \epsilon(n) \rangle B^T\\ 
     &= A P_{n} A^T + B R_{\epsilon} B^T
 \end{aligned} \label{4}\tag{4}
 $$
@@ -61,25 +61,25 @@ Next, we derive an expression for the output covariance matrix,
 
 $$
 \begin{aligned}
-\text{Cov}(w(n),w(k)) :&= \langle w(n), w(k) \rangle \\
-&= \langle Cx(n) + \epsilon(n), Cx(k) + \epsilon(k) \rangle \\
-&= C \langle x(n), x(k) \rangle C^T + C \langle x(n), \epsilon(k) \rangle +\\
-&\quad\;\; \langle \epsilon(n), x(k) \rangle C^T + \langle \epsilon(n), \epsilon(k) \rangle.
+\text{Cov}(w(n),w(k)) :&= \langle w(n),\, w(k) \rangle \\
+&= \langle Cx(n) + \epsilon(n),\, Cx(k) + \epsilon(k) \rangle \\
+&= C \langle x(n),\, x(k) \rangle C^T + C \langle x(n),\, \epsilon(k) \rangle +\\
+&\quad\;\; \langle \epsilon(n),\, x(k) \rangle C^T + \langle \epsilon(n),\, \epsilon(k) \rangle.
 \end{aligned} \label{5}\tag{5}
 $$
 
 
-For $n > k$, $\langle \epsilon(n), x(k) \rangle = 0$ and $\langle \epsilon(n), \epsilon(k) \rangle = 0$. 
+For $n > k$, $\langle \epsilon(n), \,x(k) \rangle = 0$ and $\langle \epsilon(n),\, \epsilon(k) \rangle = 0$. 
 
 Therefore,
 
 $$
 \begin{aligned}
-\text{Cov}(w(n),w(k)) :&= \langle w(n), w(k) \rangle \\
-&= C \langle x(n), x(k) \rangle C^T + C \langle x(n), \epsilon(k) \rangle \\
+\text{Cov}(w(n),w(k)) :&= \langle w(n),\, w(k) \rangle \\
+&= C \langle x(n),\, x(k) \rangle C^T + C \langle x(n),\, \epsilon(k) \rangle \\
 &= CA^{n-k}P_k C^T +\\
-&\quad\;\; C \langle A^{n-k-1} (Ax(k) + B\epsilon(k), \epsilon(k) \rangle\\
-&= CA^{n-k-1}A P_k C^T + C A^{n-k-1}B \langle \epsilon(k), \epsilon(k) \rangle\\
+&\quad\;\; C \langle A^{n-k-1} (Ax(k) + B\epsilon(k),\, \epsilon(k) \rangle\\
+&= CA^{n-k-1}A P_k C^T + C A^{n-k-1}B \langle \epsilon(k),\, \epsilon(k) \rangle\\
 &= CA^{n-k-1} \left( AP_kC^T + BR_{\epsilon}\right)\\
 \end{aligned} \label{6}\tag{6}
 $$
