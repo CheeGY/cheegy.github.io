@@ -65,6 +65,7 @@ $$
 \end{aligned}
 $$
 
+
 For $n > k$, $\langle \epsilon(n), x(k) \rangle = 0$ and $\langle \epsilon(n), \epsilon(k) \rangle = 0$. Therefore,
 
 $$
@@ -77,7 +78,7 @@ $$
 \end{aligned}
 $$
 
-As $k \to \infty$, the state covariance $P_n$ reaches steady-state and it is a positive semi-definite matrix that satisfy the Lyapunov equation,
+When $k,n \to \infty$, the state covariance $P_n$ reaches steady-state and it is a positive semi-definite matrix that satisfy the Lyapunov equation,
 
 $$
 P_n = A P_n A^T + B R_{\epsilon} B^T.
