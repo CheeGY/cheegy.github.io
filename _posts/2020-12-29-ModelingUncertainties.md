@@ -85,8 +85,8 @@ $$
 \end{aligned} \label{6}\tag{6}
 $$
 
-When $k,n \to \infty$, the state covariance $P_n$ from \eqref{2} reaches steady-state and it is a positive semi-definite matrix that satisfy the Lyapunov equation,
+When $k,n \to \infty$, the state covariance $P_n \to P$ and it is a positive semi-definite matrix that satisfy the Lyapunov equation,
 
 $$
-P_n = A P_n A^T + B R_{\epsilon} B^T. \label{7}\tag{7}
+P = A P A^T + B R_{\epsilon} B^T. \label{7}\tag{7}
 $$
