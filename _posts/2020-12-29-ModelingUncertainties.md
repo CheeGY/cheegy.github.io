@@ -26,7 +26,7 @@ where it is assumed that all eigenvalues of $A$ lie strictly inside the unit cir
 Suppose $n > k$. Observe from \eqref{1} that 
 
 $$
-x(n) = A^{n-k} x(k) + F\,\textbf{col}\{\epsilon(k), \epsilon(k+1),\dots,\epsilon(n-1)\}, \label{3}\tag{3}
+x(n) = A^{n-k} x(k) + F\,\textbf{col}\{\epsilon(k), \epsilon(k+1),\dots,\epsilon(n-1)\}, \label{2}\tag{2}
 $$
 
 for some matrix $F$. 
@@ -39,7 +39,7 @@ P_{n} &= \langle x(n), x(k) \rangle \\
     &= \langle A^{n-k} x(k) + F\,\textbf{col}\{\epsilon(k), \epsilon(k+1),\dots,\epsilon(n-1)\}, x(k) \rangle \\
     &= A^{n-k} \langle x(k), x(k) \rangle + 0 \\
     &= A^{n-k} P_k.
-\end{aligned} \label{4}\tag{4}
+\end{aligned} \label{3}\tag{3}
 $$
 
 Furthermore, the state covariance at time $n+1$, denoted by $P_{n+1}$, can be written as
@@ -50,7 +50,7 @@ P_{n+1} :&= \langle x(n+1), x(n+1) \rangle\\
     &= \langle Ax(n) + B\epsilon(n), Ax(n) + B\epsilon(n) \rangle \\ 
     &= A \langle x(n), x(n) \rangle A^T + B \langle \epsilon(n), \epsilon(n) \rangle B^T\\ 
     &= A P_{n} A^T + B R_{\epsilon} B^T
-\end{aligned} \label{2}\tag{2}
+\end{aligned} \label{4}\tag{4}
 $$
 
 This relates the propagation of the state covariance matrix with the process dynamics, in particular $A$ and $B$ and noise covariance $R_{\epsilon}$.
