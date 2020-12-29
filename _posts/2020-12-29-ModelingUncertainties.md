@@ -23,7 +23,7 @@ where it is assumed that all eigenvalues of $A$ lie strictly inside the unit cir
 
 ---
 
-The state covariance at time $n+1$, denoted by $P_{n+1}$, can be represented using inner products and expressed as follows,
+Next, suppose $n > k$ for the following discussion. The state covariance at time $n+1$, denoted by $P_{n+1}$, can be represented using inner products and expressed as follows,
 
 $$
 \begin{aligned}
@@ -34,7 +34,9 @@ P_{n+1} :&= \langle x(n+1), x(n+1) \rangle\\
 \end{aligned}
 $$
 
-Observe from the system equations that for $n > k$,
+This relates the propagation of the state covariance matrix with the process dynamics, in particular $A$ and $B$ and noise covariance $R_{\epsilon}$.
+
+Observe from the system equations that
 
 $$
 x(n) = A^{n-k} x(k) + F\,\textbf{col}\{\epsilon(k), \epsilon(k+1),\dots,\epsilon(n-1)\},
