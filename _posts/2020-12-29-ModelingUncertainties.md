@@ -27,7 +27,7 @@ The state covariance at time $n+1$, denoted by $P_{n+1}$, can be represented usi
 
 $$
 \begin{aligned}
-P_{n+1} &:= \langle x(n+1), x(n+1) \rangle\\
+P_{n+1} :&= \langle x(n+1), x(n+1) \rangle\\
     &= \langle Ax(n) + B\epsilon(n), Ax(n) + B\epsilon(n) \rangle \\ 
     &= A \langle x(n), x(n) \rangle A^T + B \langle \epsilon(n), \epsilon(n) \rangle B^T\\ 
     &= A P_{n} A^T + B R_{\epsilon} B^T
@@ -59,10 +59,10 @@ Next, we derive an expression for the output covariance matrix,
 
 $$
 \begin{aligned}
-\text{Cov}(w(n),w(k)) &:= \langle w(n), w(k) \rangle \\
+\text{Cov}(w(n),w(k)) :&= \langle w(n), w(k) \rangle \\
 &= \langle Cx(n) + \epsilon(n), Cx(k) + \epsilon(k) \rangle \\
 &= C \langle x(n), x(k) \rangle C^T + C \langle x(n), \epsilon(k) \rangle +\\
-&\quad \langle \epsilon(n), x(k) \rangle C^T + \langle \epsilon(n), \epsilon(k) \rangle.
+&\quad\;\; \langle \epsilon(n), x(k) \rangle C^T + \langle \epsilon(n), \epsilon(k) \rangle.
 \end{aligned}
 $$
 
@@ -71,7 +71,7 @@ For $n > k$, $\langle \epsilon(n), x(k) \rangle = 0$ and $\langle \epsilon(n), \
 
 $$
 \begin{aligned}
-\text{Cov}(w(n),w(k)) &:= \langle w(n), w(k) \rangle \\
+\text{Cov}(w(n),w(k)) :&= \langle w(n), w(k) \rangle \\
 &= C \langle x(n), x(k) \rangle C^T + C \langle x(n), \epsilon(k) \rangle \\
 &= CA^{n-k}P_k C^T + C \langle A^{n-k-1} (Ax(k) + B\epsilon(k), \epsilon(k) \rangle\\
 &= CA^{n-k-1}A P_k C^T + C A^{n-k-1}B \langle \epsilon(k), \epsilon(k) \rangle\\
