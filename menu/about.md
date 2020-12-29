@@ -5,7 +5,7 @@ title: About
 
 ![alt text](/assets/img/marina.jpg "MBS")
 
-This page serves as a consolidation of thoughts in a continual pursuit of knowledge. The posts provide details on key mathematical concepts that are important, but intermittently forgotten.
+This page serves as a consolidation of thoughts in a continual pursuit of knowledge in domains related to control theory. The posts provide details on key mathematical concepts that are important, but intermittently forgotten.
 
 ---
 
