@@ -58,6 +58,7 @@ $$
 ---
 
 Next, we derive an expression for the output covariance matrix,
+
 $$
 \begin{aligned}
 \text{Cov}(w(n),w(k)) :&= \langle w(n), w(k) \rangle \\
@@ -71,6 +72,7 @@ $$
 For $n > k$, $\langle \epsilon(n), x(k) \rangle = 0$ and $\langle \epsilon(n), \epsilon(k) \rangle = 0$. 
 
 Therefore,
+
 $$
 \begin{aligned}
 \text{Cov}(w(n),w(k)) :&= \langle w(n), w(k) \rangle \\
