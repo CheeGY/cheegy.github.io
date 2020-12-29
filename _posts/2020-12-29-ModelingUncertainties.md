@@ -19,11 +19,30 @@ w(k) &= Cx(k) + \epsilon(k),
 \end{aligned} \label{1}\tag{1}
 $$
 
-where it is assumed that all eigenvalues of $A$ lie strictly inside the unit circle (asymptotically stable) and $\epsilon(k)$ is assumed to be standard Gaussian noise with zero mean and covariance $R_{\epsilon}$ and stationary.
+where it is assumed that all eigenvalues of $A$ lie strictly inside the unit circle (asymptotically stable) and $\epsilon(k)$ is assumed to be standard Gaussian noise with zero mean and covariance $R_{\epsilon}$ and the process is also assumed to be stationary.
 
 ---
 
-Next, suppose $n > k$ for the following discussion. The state covariance at time $n+1$, denoted by $P_{n+1}$, can be represented using inner products
+Suppose $n > k$. Observe from \eqref{1} that 
+
+$$
+x(n) = A^{n-k} x(k) + F\,\textbf{col}\{\epsilon(k), \epsilon(k+1),\dots,\epsilon(n-1)\}, \label{3}\tag{3}
+$$
+
+for some matrix $F$. 
+
+Hence, the state covariance at timestep $n$, $P_n$ can be represented using inner products
+
+$$
+\begin{aligned}
+P_{n} &= \langle x(n), x(k) \rangle \\
+    &= \langle A^{n-k} x(k) + F\,\textbf{col}\{\epsilon(k), \epsilon(k+1),\dots,\epsilon(n-1)\}, x(k) \rangle \\
+    &= A^{n-k} \langle x(k), x(k) \rangle + 0 \\
+    &= A^{n-k} P_k.
+\end{aligned} \label{4}\tag{4}
+$$
+
+Furthermore, the state covariance at time $n+1$, denoted by $P_{n+1}$, can be written as
 
 $$
 \begin{aligned}
@@ -35,25 +54,6 @@ P_{n+1} :&= \langle x(n+1), x(n+1) \rangle\\
 $$
 
 This relates the propagation of the state covariance matrix with the process dynamics, in particular $A$ and $B$ and noise covariance $R_{\epsilon}$.
-
-Observe from \eqref{1} that
-
-$$
-x(n) = A^{n-k} x(k) + F\,\textbf{col}\{\epsilon(k), \epsilon(k+1),\dots,\epsilon(n-1)\}, \label{3}\tag{3}
-$$
-
-for some matrix $F$. 
-
-Hence, we can also write the state covariance at timestep $n$ as
-
-$$
-\begin{aligned}
-P_{n} &= \langle x(n), x(k) \rangle \\
-    &= \langle A^{n-k} x(k) + F\,\textbf{col}\{\epsilon(k), \epsilon(k+1),\dots,\epsilon(n-1)\}, x(k) \rangle \\
-    &= A^{n-k} \langle x(k), x(k) \rangle + 0 \\
-    &= A^{n-k} P_k.
-\end{aligned} \label{4}\tag{4}
-$$
 
 ---
 
