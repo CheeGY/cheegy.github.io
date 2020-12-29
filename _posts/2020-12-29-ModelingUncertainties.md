@@ -53,11 +53,11 @@ P_{n+1} :&= \langle x(n+1),\, x(n+1) \rangle\\
 \end{aligned} \label{4}\tag{4}
 $$
 
-This relates the propagation of the state covariance matrix with the process dynamics, in particular $A$ and $B$ and noise covariance $R_{\epsilon}$.
+This relates the propagation of the state covariance matrix with the process dynamics, $A$ and $B$, as well as noise covariance $R_{\epsilon}$.
 
 ---
 
-Next, we derive an expression for the output covariance matrix,
+Next, we derive an expression for the disturbance covariance matrix,
 
 $$
 \begin{aligned}
@@ -85,7 +85,7 @@ $$
 \end{aligned} \label{6}\tag{6}
 $$
 
-When $k,n \to \infty$, the state covariance $P_n \to P$ and it is a positive semi-definite matrix that satisfy the Lyapunov equation,
+When $k,n \to \infty$, the state covariance $P_n \to P$, where $P$ is a positive semi-definite matrix that satisfy the Lyapunov equation,
 
 $$
 P = A P A^T + B R_{\epsilon} B^T. \label{7}\tag{7}
