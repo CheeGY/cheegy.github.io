@@ -157,7 +157,7 @@ for t in range(num_epochs):
 
 ![alt text](/assets/img/post4_train_valid_error.PNG "Training and Validation errors")
 
-In this example, training and validation errors of $9.74\%$ and $7.43\%$ are attained, after training for 25 epochs. These results are typical of the performance of a 1-layer NN model for the MNIST dataset. There exist more complex models such as convolutional neural networks that can achieve errors of less than $1\%$. Apart from recognizing handwritten digits, ML has also been deployed in several applications in computer vision and natural language processing.
+In this example, training and validation errors of $9.74\%$ and $7.43\%$ are attained, after training for $25$ epochs. These results are typical of the performance of a 1-layer NN model for the MNIST dataset. There exist more complex models such as convolutional neural networks that can achieve errors of less than $1\%$. Apart from recognizing handwritten digits, ML has also been deployed in several applications in computer vision and natural language processing.
 
 
 
