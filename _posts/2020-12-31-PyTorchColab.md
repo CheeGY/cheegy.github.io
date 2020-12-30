@@ -89,7 +89,7 @@ model       = torch.nn.Sequential(
 ---
 
 ## Model Training and Validation (prediction)
-We then implement the following module, where the model is trained and learns patterns/features in the images. Since we are dealing with a multi-class classification problem, the cross entropy loss is used as the objective function. Stochastic gradient descent (SGD) is used as the optimizer. 
+We then implement the following module, where the model is trained and learns patterns/features in the images. Since we are dealing with a multi-class classification problem, the [cross entropy loss](https://pytorch.org/docs/stable/generated/torch.nn.CrossEntropyLoss.html) is used as the objective function. [Stochastic gradient descent](https://pytorch.org/docs/stable/optim.html?highlight=sgd%20optim#torch.optim.SGD) (SGD) is used as the optimizer. 
 
 ```python
 num_epochs      = 15
