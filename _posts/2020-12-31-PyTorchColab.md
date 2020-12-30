@@ -76,7 +76,7 @@ Another convenient aspect about Colab and PyTorch is that any code snippet can b
 ----
 
 ## Model Construction
-Next, we construct a simple 1-layer linear neural network as our model, using ReLU activation functions and the torch.nn.Sequential module in PyTorch.
+Next, we construct a simple 1-layer linear neural network as our model, using ReLU activation functions and the *torch.nn.Sequential* module in PyTorch. Documentation for these functions can be found [here](https://pytorch.org/docs/stable/generated/torch.nn.ReLU.html) and [here](https://pytorch.org/docs/stable/generated/torch.nn.Sequential.html).
 
 ```python
 D_in, D_out = 784, 10
