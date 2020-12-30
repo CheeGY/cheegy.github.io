@@ -26,7 +26,7 @@ One of the most explored applications in ML is the ability to recognize handwrit
 
 ![alt text](/assets/img/sample_mnist.PNG "MNIST samples")
 
-As observed, some of these handwritten digits are more difficult to recognize than others. The objective of a ML model is to recognize these digits automatically, with high accuracy and without human supervision. Concretely, we first use part of the dataset to $\textbf{train}$ the ML model and allow it to learn the patterns/features of the images. Next, using what it has learnt, the model tries to predict the digits in the remaining images of the dataset. The first part of the dataset is often called the training dataset, while the second part of the dataset is called the validation dataset.
+As observed, some of these handwritten digits are more difficult to recognize than others. The objective of a ML model is to recognize these digits automatically, with high accuracy and without human supervision. Concretely, we first use a part of the dataset to *train* the ML model and allow it to learn the patterns/features of the images. Next, using what it has learnt, the model tries to *predict* the digits in the remaining images of the dataset. The first part of the dataset is often called the training dataset, while the second part of the dataset is called the validation dataset.
 
 Before training the ML model, pre-processing is required to extract and partition the training and validation datasets and to normalize the database. The following code snippet performs this pre-processing, after importing the relevant libraries. 
 
@@ -68,7 +68,7 @@ Another convenient thing about Colab and PyTorch is that this snippet above can 
 
 ----
 
-Next, we construct a 1-layer linear neural network as our model.
+Next, we construct a 1-layer linear neural network as our model, using ReLU activation functions and the Sequential nn module in PyTorch.
 
 ```Python3
 D_in, D_out   = 784, 10
