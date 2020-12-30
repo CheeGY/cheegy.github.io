@@ -35,7 +35,7 @@ Before going into the details of the code implementation, let's briefly introduc
 ---
 
 ## Pre-processing of the MNIST Dataset
-Before construction and training of the model, data pre-processing is often necessary to extract and partition the training and validation datasets, and to normalize the samples in the dataset. The following code snippet performs this pre-processing step, after importing the relevant libraries. 
+Before construction and training of the model, data pre-processing is often necessary to extract the training and validation datasets, and to normalize the samples in the dataset. The following code snippet performs this pre-processing step, after importing the relevant libraries. 
 
 ```python
 # Import PyTorch libraries
@@ -71,7 +71,7 @@ val_dataset     = TensorDataset(xval, yval)
 val_dataloader  = DataLoader(val_dataset, batch_size=32,shuffle=False)
 ```
 
-Another convenient aspect about Colab and PyTorch is that any code snippet can be copied or extracted directly into a Jupyter notebook embedded in Colab and can be executed immediately.
+Another convenient aspect about Colab and PyTorch is that any code snippet can be copied or extracted directly into a Jupyter notebook embedded in Colab and can be executed immediately. For more details, try it out in [Colab](https://colab.research.google.com/).
 
 ----
 
