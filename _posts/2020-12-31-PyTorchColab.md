@@ -37,7 +37,7 @@ Before going into the details of the code implementation, let's briefly introduc
 ## Pre-processing of the MNIST dataset
 Before construction and training of the model, data pre-processing is often necessary to extract and partition the training and validation datasets, and to normalize the samples in the dataset. The following code snippet performs this pre-processing step, after importing the relevant libraries. 
 
-```
+```python
 # Import PyTorch libraries
 import torch
 import torch.nn as nn
@@ -91,7 +91,7 @@ model = torch.nn.Sequential(
 ## Model training and validation (prediction)
 We then implement the following module, where the model is trained and learns patterns/features in the images. Since we are dealing with a multi-class classification problem, the cross entropy loss is used as the objective function. Stochastic gradient descent (SGD) is used as the optimizer. 
 
-```python
+```python3
 num_epochs = 15
 learning_rate = 0.08
 criterion = nn.CrossEntropyLoss()
