@@ -28,6 +28,9 @@ Before going into the details of the code implementation, let's briefly introduc
 
 [PyTorch](https://pytorch.org/) is a machine learning/deep learning open source library, based on the programming language, Python. It provides two key features; tensor computing through GPUs, as well as neural networks based on an automatic differentiation system. What makes PyTorch popular among data scientists and AI enthusiasts is its ability to parallelize computations using GPUs, and that speeds up training and data processing significantly.
 
+
+---
+
 ## What is Google Colab?
 
 ![alt text](/assets/img/colab_logo.png "Google Colab")
