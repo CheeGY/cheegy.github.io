@@ -6,17 +6,17 @@ categories: journal
 tags: [machine learning]
 image: post4.jpg
 ---
-One of the most explored applications in the field of machine learning (ML) is the recognition of handwritten digits from images. In this note, a basic PyTorch implementation of this application is provided. This is compatible with Google Colab and hence, it is suitable for anyone who may be interested to get started with these tools.
+One of the most explored applications in the field of machine learning (ML) is the recognition of handwritten digits from images. In this post, a basic PyTorch implementation is provided. Furthermore, this is compatible with Google Colab and hence, it is suitable for anyone who may be interested to get started with these tools.
 
-For this example, we utilized the famous MNIST database, which contains images of handwritten digits ($0$ to $9$). Here are some samples of these images,
+To illustrate this example, we use the famous MNIST database, which contains images of handwritten digits ($0$ to $9$). Here are some samples of these images
 
 ![alt text](/assets/img/sample_mnist.PNG "MNIST samples")
 
-As observed, some of these digits are quite ambiguous, even for humans. With machine learning, the objective is to construct a model that can recognize these digits automatically. Ideally, this should be done with high accuracy and without human supervision. 
+Observe that some of these digits can be quite ambiguous, may even be difficult for humans to recognize. With machine learning, the objective is to construct a model that can recognize these digits automatically, and with high accuracy. This is of course done without any human supervision. 
 
-Typical of many machine learning applications, the first step is to construct and train the ML model, using part of the database. The training process allows the model to **learn** the patterns/features of these images. This first part of the dataset is often called the *training dataset*. Next, using what it has learnt in the training process, the model attempts to **predict** the digits in the remaining images of the dataset, also called the *validation dataset*.
+To achieve this, we adopt the following game pla. Typical of many machine learning applications, the first step is to construct and train the ML model, using part of the database. The training process allows the model to **learn** the patterns/features of these images. This first part of the dataset is often called the *training dataset*. Next, using what it has learnt in the training process, the model attempts to **predict** the digits in the remaining images of the dataset, also called the *validation dataset*.
 
-Before going into the details of the code implementation, let's briefly introduce PyTorch and Google Colab.
+Before going into the details of the code implementation, let's briefly introduce PyTorch and Google Colab and their advantages.
 
 ---
 
@@ -24,9 +24,7 @@ Before going into the details of the code implementation, let's briefly introduc
 
 ![alt text](/assets/img/torch_logo.png "Pytorch")
 
-[PyTorch](https://pytorch.org/) is a machine learning/deep learning open source library, based on the programming language, Python. It provides two key features; tensor computing through GPUs, as well as neural networks based on an automatic differentiation system.
-
-What makes PyTorch popular among data scientists and AI enthusiasts is its ability to parallelize computations using GPUs, and this speeds things up significantly.
+[PyTorch](https://pytorch.org/) is a machine learning/deep learning open source library, based on the programming language, Python. It provides two key features; tensor computing through GPUs, as well as neural networks based on an automatic differentiation system. What makes PyTorch popular among data scientists and AI enthusiasts is its ability to parallelize computations using GPUs, and this speeds up training and data processing significantly.
 
 ## What is Google Colab?
 
