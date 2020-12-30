@@ -1,20 +1,20 @@
 ---
 layout: post
-title: "Recognizing Handwritten Digits with Machine Learning"
+title: "Recognizing Handwritten Digits using Tools of Machine Learning"
 author: "Kong Yao"
 categories: journal
 tags: [machine learning]
 image: post4.jpg
 ---
-One of the most explored applications in the field of machine learning (ML) is the recognition of handwritten digits from images. In this note, a PyTorch implementation of this application, compatible with Google Colab, is provided. This is suitable for anyone who is interested to get started with these tools.
+One of the most explored applications in the field of machine learning (ML) is the recognition of handwritten digits from images. In this note, a basic PyTorch implementation of this application, compatible with Google Colab, is provided. This is suitable for anyone who is interested to get started with these tools.
 
 For this example, we utilized the famous MNIST database, which contains images of handwritten digits ($0$ to $9$). Here are some samples of these images,
 
 ![alt text](/assets/img/sample_mnist.PNG "MNIST samples")
 
-As observed, some of these digits are quite ambiguous, even for humans. With machine learning, the objective here is to construct a model that recognizes these digits automatically. Ideally, this should be done with high accuracy and without human supervision. 
+As observed, some of these digits are quite ambiguous, even for humans. With machine learning, the objective is to construct a model that can recognize these digits automatically. Ideally, this should be done with high accuracy and without human supervision. 
 
-The game plan is quite typical of any ML application/project. The first step is to use part of the dataset to train the ML model. The training process allows the model to **learn** the patterns/features of these images. This first part of the dataset is often called the *training dataset*. Next, using what it has learnt in the training process, the model attempts to **predict** the digits in the remaining images of the dataset, also called the *validation dataset*.
+Typical of many ML applications, the first step is to use part of the dataset to train the ML model. The training process allows the model to **learn** the patterns/features of these images. This first part of the dataset is often called the *training dataset*. Next, using what it has learnt in the training process, the model attempts to **predict** the digits in the remaining images of the dataset, also called the *validation dataset*.
 
 Before going into the details of the code implementation, let's briefly introduce PyTorch and Google Colab.
 
@@ -36,7 +36,8 @@ What makes PyTorch popular among data scientists and AI enthusiasts is its abili
 
 ---
 
-Before training the ML model, pre-processing is often necessary to extract and partition the training and validation datasets and to normalize the samples in the database. The following code snippet performs this pre-processing, after importing the relevant libraries. 
+## Pre-processing of the database
+Before construction and training of the ML model, pre-processing is often necessary to extract and partition the training and validation datasets and to normalize the samples in the database. The following code snippet performs this pre-processing, after importing the relevant libraries. 
 
 ```Python3
 # Import PyTorch libraries
@@ -76,6 +77,7 @@ Another convenient thing about Colab and PyTorch is that this snippet above can 
 
 ----
 
+## Model construction
 Next, we construct a 1-layer linear neural network as our model, using ReLU activation functions and the Sequential nn module in PyTorch.
 
 ```Python3
@@ -88,6 +90,7 @@ model = torch.nn.Sequential(
 
 ---
 
+## Model training and validation (prediction)
 Following that, we implement the following training module, where the model is being trained. Since we are dealing with a multi-class classification problem, the cross entropy loss is used as the objective function and stochastic gradient descent (SGD) is used as the optimizer. 
 
 ```Python3
@@ -147,7 +150,8 @@ for t in range(num_epochs):
 ```    
 ---
 
-In this example, we obtained training and validation errors of $9.74\%$ and $7.43\%$, which is typical of the performance of a 1-layer NN model for the MNIST database. There exists more sophisticated models such as convolutional neural networks that achieve errors of less than $1\%$. Apart from recognizing handwritten digits, ML has also been deployed in several applications in computer vision and natural language processing.
+## Results and Conclusion
+In this example, we obtained training and validation errors of $9.74\%$ and $7.43\%$, which is typical of the performance of a 1-layer NN model for the MNIST database. There exists more sophisticated models such as convolutional neural networks that can achieve errors of less than $1\%$. Apart from recognizing handwritten digits, ML has also been deployed in several applications in computer vision and natural language processing.
 
 
 
