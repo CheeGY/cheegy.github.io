@@ -32,7 +32,7 @@ What makes PyTorch popular among data scientists and AI enthusiasts is its abili
 
 ![alt text](/assets/img/colab_logo.png "Google Colab")
 
-[Google Colab](https://colab.research.google.com/) is an web-based application that allows you to write and execute Python, right from your browser. Colab has several libraries pre-installed, including PyTorch. This allows users to use PyTorch in Colab, without any further installation.
+[Google Colab](https://colab.research.google.com/) is an web-based application that allows you to write and execute Python, right from your browser. Colab has several libraries pre-installed, including PyTorch. This allows users with Google accounts to use PyTorch in Colab immediately, without any further installation.
 
 ---
 
