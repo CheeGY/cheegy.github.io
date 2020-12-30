@@ -6,17 +6,17 @@ categories: journal
 tags: [machine learning]
 image: post4.jpg
 ---
-One of the most explored applications in the field of machine learning (ML) is the recognition of handwritten digits from images. In this post, a basic PyTorch implementation is provided. Furthermore, this is compatible with Google Colab and hence, it is suitable for anyone who may be interested to get started with these tools.
+One of the most explored applications in the field of machine learning (ML) is the recognition of handwritten digits from low-resolution images. In this post, a basic PyTorch implementation is provided. Furthermore, this is compatible with Google Colab and hence, it is suitable for anyone who may be interested to get started with these tools.
 
-To illustrate this example, we use the famous MNIST database, which contains images of handwritten digits ($0$ to $9$). Here are some samples of these images
+To illustrate this example, we use the famous MNIST ("Modified National Institute of Standards and Technology") dataset, which is the de facto "Hello World" dataset for computer vision. It contains images of handwritten digits ($0$ to $9$) and here are some samples of the images in the dataset
 
 ![alt text](/assets/img/sample_mnist.PNG "MNIST samples")
 
-Observe that some of these digits can be quite ambiguous, may even be difficult for humans to recognize. With machine learning, the objective is to construct a model that can recognize these digits automatically, and with high accuracy. This is of course done without any human supervision. 
+Observe that some of these digits can be quite ambiguous, and may even be difficult for humans to recognize. With machine learning, the objective is to construct a model that can recognize these digits automatically, and with high accuracy. This is of course done without any human supervision. 
 
-To achieve this, we adopt the following game pla. Typical of many machine learning applications, the first step is to construct and train the ML model, using part of the database. The training process allows the model to **learn** the patterns/features of these images. This first part of the dataset is often called the *training dataset*. Next, using what it has learnt in the training process, the model attempts to **predict** the digits in the remaining images of the dataset, also called the *validation dataset*.
+To achieve this, the first step is to construct and train the ML model, using part of the dataset. This training process allows the model to **learn** important patterns and features found in these images. This first part of the dataset is often called the *training dataset*. Next, using what it has learnt in the training process, the model attempts to **predict** the digits in the remaining images of the dataset, also known as the *validation dataset*.
 
-Before going into the details of the code implementation, let's briefly introduce PyTorch and Google Colab and their advantages.
+Before going into the details of the code implementation, let's briefly introduce PyTorch and Google Colab.
 
 ---
 
