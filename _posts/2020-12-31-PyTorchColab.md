@@ -12,11 +12,11 @@ In this example, we use the famous MNIST (Modified National Institute of Standar
 
 ![alt text](/assets/img/sample_mnist.PNG "MNIST samples")
 
-Observe that some of these digits can be quite ambiguous, and may even be difficult for humans to recognize. With machine learning, the objective is to construct a computational model that recognizes these digits automatically, and with high accuracy. Furthermore, this is done without any human supervision. 
+Observe that some of these digits can be quite ambiguous, and may even be difficult for humans to recognize. With machine learning, the objective is to construct a computational model that recognizes these digits automatically and with high accuracy.
 
-To achieve this, the first step is to construct and train the ML model, using part of the dataset. This training process allows the model to **learn** important patterns and features found in these images. This first part of the dataset is often called the *training dataset*. 
+To achieve this, the first step is to construct and train the ML model, using one part of the dataset. This training process allows the model to **learn** important patterns, also known as features, found in these images. This first part of the dataset is often called the *training dataset*. 
 
-Next, using what it has learned in the training process, the model attempts to **predict** the digits in the remaining images of the dataset, also known as the *validation dataset*.
+Next, using what it has learned in the training process, the model attempts to **predict** the digits in the images of the other part of the dataset, also known as the *validation dataset*.
 
 Before going into the details of the code implementation, let's briefly introduce PyTorch and Google Colab.
 
@@ -40,7 +40,7 @@ Before going into the details of the code implementation, let's briefly introduc
 ---
 
 ## Pre-processing of the MNIST Dataset
-Before construction and training of the model, data pre-processing is often necessary to extract the training and validation datasets, and to normalize the samples in the dataset. The following code snippet performs this pre-processing step, after importing the relevant libraries. 
+Before construction and training of the model, data pre-processing is often necessary to extract and partition the training and validation datasets, and to normalize the samples in the dataset. The following code snippet performs this pre-processing step, after importing the relevant libraries. 
 
 ```python
 # Import PyTorch libraries
