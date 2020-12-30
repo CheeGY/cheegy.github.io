@@ -6,7 +6,7 @@ categories: journal
 tags: [machine learning]
 image: post4.jpg
 ---
-One of the most explored applications in the field of machine learning (ML) is the recognition of handwritten digits from low-resolution images. In this post, a basic PyTorch implementation is provided. Furthermore, this is compatible with Google Colab and hence, it is suitable for anyone who may be interested to get started with these tools.
+One of the most explored applications in the field of machine learning (ML) is the recognition of handwritten digits from low-resolution images. In this post, we provide a basic PyTorch implementation that is compatible with Google Colab. Due to its simplicity, it is suitable for anyone who may be interested to get started with PyTorch and Colab.
 
 To illustrate this example, we use the famous MNIST ("Modified National Institute of Standards and Technology") dataset, which is the de facto "Hello World" dataset for computer vision. It contains images of handwritten digits ($0$ to $9$) and here are some samples of the images in the dataset
 
