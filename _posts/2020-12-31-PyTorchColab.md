@@ -60,15 +60,15 @@ xtrain  = xtrain/255.0
 xval    = xval/255.0
 
 # Attach training and validation labels to GPU
-ytrain = train.targets.to(device)
-yval = val.targets.to(device)
+ytrain  = train.targets.to(device)
+yval    = val.targets.to(device)
 
 # Set training and validation dataloaders 
-train_dataset = TensorDataset(xtrain, ytrain)
-train_dataloader = DataLoader(train_dataset, batch_size=32, shuffle=True)
+train_dataset   = TensorDataset(xtrain, ytrain)
+train_dataloader= DataLoader(train_dataset, batch_size=32, shuffle=True)
 
-val_dataset = TensorDataset(xval, yval)
-val_dataloader = DataLoader(val_dataset, batch_size=32,shuffle=False)
+val_dataset     = TensorDataset(xval, yval)
+val_dataloader  = DataLoader(val_dataset, batch_size=32,shuffle=False)
 ```
 
 Another convenient aspect about Colab and PyTorch is that any code snippet can be copied or extracted directly into a Jupyter notebook embedded in Colab and can be executed immediately.
@@ -105,15 +105,15 @@ val_out         = torch.zeros(size=(torch.ceil(torch.mul(num_epochs*len(train_da
 val_step        = 0
 for t in range(num_epochs):
   for idx, (x, y) in enumerate(train_dataloader, 0):
-    x, y = x.to(device), y.to(device)
+    x, y    = x.to(device), y.to(device)
 
     optimizer.zero_grad()      
-    y_pred = model(x)
-    loss = criterion(y_pred, y)
+    y_pred  = model(x)
+    loss    = criterion(y_pred, y)
     loss.backward()
 
-    total += y.size(0)
-    train_loss += loss.item()*y.size(0)
+    total       += y.size(0)
+    train_loss  += loss.item()*y.size(0)
     num_correct += (torch.argmax(y_pred, dim=1) == y).sum().item()
 
     train_out[step,0] = train_loss/total
@@ -121,17 +121,17 @@ for t in range(num_epochs):
 
     if step % 500 == 0:
       with torch.no_grad():
-        val_loss = 0.0
-        total_val = 0.0
+        val_loss        = 0.0
+        total_val       = 0.0
         num_correct_val = 0.0
         for idx, (x, y) in enumerate(val_dataloader, 0):
-          x, y = x.to(device), y.to(device)
-          y_pred = model(x)
-          loss = criterion(y_pred, y)          
-          val_loss += loss.item()*y.size(0)
-          num_correct_val += (torch.argmax(y_pred, dim=1) == y).sum().item()
+          x, y              = x.to(device), y.to(device)
+          y_pred            = model(x)
+          loss              = criterion(y_pred, y)          
+          val_loss          += loss.item()*y.size(0)
+          num_correct_val   += (torch.argmax(y_pred, dim=1) == y).sum().item()
           
-          total_val += y.size(0)
+          total_val         += y.size(0)
           val_out[val_step,0] = val_loss/total_val
           val_out[val_step,1] = (1-num_correct_val/total_val)*100
 
@@ -140,7 +140,7 @@ for t in range(num_epochs):
               ' Training Err:', train_out[step,1].item(), 
               ' Validation Loss:', val_out[val_step,0].item(), 
               ' Validation Err:', val_out[val_step,1].item())
-        val_step               += 1
+        val_step            += 1
 
     optimizer.step()
 
