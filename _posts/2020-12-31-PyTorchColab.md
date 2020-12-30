@@ -81,7 +81,7 @@ Another convenient aspect about Colab and PyTorch is that any code snippet can b
 ----
 
 ## Model Construction
-Next, a simple 1-layer linear neural network is constructed and serves as the model. It uses ReLU activation functions and the *torch.nn.Sequential* module in PyTorch. Documentation for these functions can be found [here](https://pytorch.org/docs/stable/generated/torch.nn.ReLU.html) and [here](https://pytorch.org/docs/stable/generated/torch.nn.Sequential.html).
+Next, a simple 1-layer linear neural network is constructed. This model uses ReLU activation functions and the *torch.nn.Sequential* module in PyTorch. Documentation for these functions can be found [here](https://pytorch.org/docs/stable/generated/torch.nn.ReLU.html) and [here](https://pytorch.org/docs/stable/generated/torch.nn.Sequential.html).
 
 ```python
 D_in, D_out = 784, 10
@@ -94,7 +94,7 @@ model       = torch.nn.Sequential(
 ---
 
 ## Model Training and Validation (prediction)
-The following module is then implemented to train the model so that it learns patterns/features in the given images. Since this is a multi-class classification problem, the [cross entropy loss](https://pytorch.org/docs/stable/generated/torch.nn.CrossEntropyLoss.html) is used as the objective function. [Stochastic gradient descent](https://pytorch.org/docs/stable/optim.html?highlight=sgd%20optim#torch.optim.SGD) (SGD) is used as the optimizer. 
+The following module is then implemented to **train** the model so that it learns patterns/features in the given images. Since this is a multi-class classification problem, the [cross entropy loss](https://pytorch.org/docs/stable/generated/torch.nn.CrossEntropyLoss.html) is used as the objective function. [Stochastic gradient descent](https://pytorch.org/docs/stable/optim.html?highlight=sgd%20optim#torch.optim.SGD) (SGD) is used as the optimizer. 
 
 ```python
 num_epochs      = 25
