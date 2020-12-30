@@ -71,7 +71,7 @@ val_dataset     = TensorDataset(xval, yval)
 val_dataloader  = DataLoader(val_dataset, batch_size=32,shuffle=False)
 ```
 
-Another convenient aspect about Colab and PyTorch is that any code snippet can be copied or extracted directly into a Jupyter notebook embedded in Colab and can be executed immediately. For more details, try it out in [Colab](https://colab.research.google.com/).
+Another convenient aspect about Colab and PyTorch is that any code snippet can be copied or extracted directly into a Jupyter notebook embedded in Colab and can be executed immediately. For a better understanding, try it out yourself in [Colab](https://colab.research.google.com/).
 
 ----
 
