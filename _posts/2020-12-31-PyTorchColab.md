@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Recognizing Handwritten Digits using Machine Learning"
+title: "Recognizing Handwritten Digits using Machine Learning - PyTorch and Colab"
 author: "Kong Yao"
 categories: journal
 tags: [machine learning]
