@@ -34,8 +34,8 @@ Before going into the details of the code implementation, let's briefly introduc
 
 ---
 
-## Pre-processing of the database
-Before construction and training of the ML model, pre-processing is often necessary to extract and partition the training and validation datasets and to normalize the samples in the database. The following code snippet performs this pre-processing, after importing the relevant libraries. 
+## Pre-processing of MNIST database
+Before construction and training of the ML model, data pre-processing is often necessary to extract and partition the training and validation datasets and to normalize the samples in the database. The following code snippet performs this pre-processing step, after importing the relevant libraries. 
 
 ```Python3
 # Import PyTorch libraries
@@ -71,12 +71,12 @@ val_dataset = TensorDataset(xval, yval)
 val_dataloader = DataLoader(val_dataset, batch_size=32,shuffle=False)
 ```
 
-Another convenient thing about Colab and PyTorch is that this snippet above can be extracted directly into a Jupyter notebook of Colab and can be executed immediately.
+Another convenient thing about Colab and PyTorch is that any code snippet can be copied or extracted directly into a Jupyter notebook embedded in Colab and can be executed immediately.
 
 ----
 
 ## Model construction
-Next, we construct a 1-layer linear neural network as our model, using ReLU activation functions and the Sequential nn module in PyTorch.
+Next, we construct a simple 1-layer linear neural network as our model, using ReLU activation functions and the Sequential nn module in PyTorch.
 
 ```Python3
 D_in, D_out = 784, 10
@@ -89,7 +89,7 @@ model = torch.nn.Sequential(
 ---
 
 ## Model training and validation (prediction)
-Following that, we implement the following training module, where the model is being trained. Since we are dealing with a multi-class classification problem, the cross entropy loss is used as the objective function and stochastic gradient descent (SGD) is used as the optimizer. 
+Following that, we implement the following training module, where the model is trained and learns features in the images. Since we are dealing with a multi-class classification problem, the cross entropy loss is used as the objective function. Stochastic gradient descent (SGD) is used as the optimizer. 
 
 ```Python3
 num_epochs = 15
@@ -149,7 +149,7 @@ for t in range(num_epochs):
 ---
 
 ## Results and Conclusion
-In this example, we obtained training and validation errors of $9.74\%$ and $7.43\%$, which is typical of the performance of a 1-layer NN model for the MNIST database. There exists more sophisticated models such as convolutional neural networks that can achieve errors of less than $1\%$. Apart from recognizing handwritten digits, ML has also been deployed in several applications in computer vision and natural language processing.
+In this simple example, we achieved training and validation errors of $9.74\%$ and $7.43\%$, which is typical of the performance of a 1-layer NN model for the MNIST database. There exists more sophisticated models such as convolutional neural networks that can achieve errors of less than $1\%$. Apart from recognizing handwritten digits, ML has also been deployed in several applications in computer vision and natural language processing.
 
 
 
