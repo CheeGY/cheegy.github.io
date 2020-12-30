@@ -82,6 +82,7 @@ model = torch.nn.Sequential(
 
 Next, we implement the following training module, where the model is being trained. The cross entropy loss is used as the objective function and stochastic gradient descent (SGD) is used as the optimizer. 
 
+```Python3
 num_epochs    = 15
 learning_rate = 0.08
 criterion     = nn.CrossEntropyLoss()
@@ -133,7 +134,7 @@ for t in range(num_epochs):
     optimizer.step()
 
     step    += 1
-    
+```    
 ---
 
 In this example, we obtained training and validation errors of $9.74\%$ and $7.43\%$, which is typical of the performance of a 1-layer NN model. There exists more sophisticated models such as convolutional neural networks that achieve errors of less than $1\%$. Apart from recognizing handwritten digits, ML has also been deployed in several applications in computer vision and natural language processing.
