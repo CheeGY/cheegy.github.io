@@ -92,7 +92,7 @@ model       = torch.nn.Sequential(
 We then implement the following module, where the model is trained and learns patterns/features in the images. Since we are dealing with a multi-class classification problem, the [cross entropy loss](https://pytorch.org/docs/stable/generated/torch.nn.CrossEntropyLoss.html) is used as the objective function. [Stochastic gradient descent](https://pytorch.org/docs/stable/optim.html?highlight=sgd%20optim#torch.optim.SGD) (SGD) is used as the optimizer. 
 
 ```python
-num_epochs      = 15
+num_epochs      = 25
 learning_rate   = 0.08
 criterion       = nn.CrossEntropyLoss()
 optimizer       = torch.optim.SGD(model.parameters(), lr=learning_rate)
@@ -149,7 +149,10 @@ for t in range(num_epochs):
 ---
 
 ## Results and Conclusion
-In this example, training and validation errors of $9.74\%$ and $7.43\%$ are attained, and these are typical of the performance of a 1-layer NN model for the MNIST dataset. There exist more complex models such as convolutional neural networks that can achieve errors of less than $1\%$. Apart from recognizing handwritten digits, ML has also been deployed in several applications in computer vision and natural language processing.
+
+![alt text](/assets/img/post4_train_valid_error.PNG "Training and Validation errors")
+
+In this example, training and validation errors of $9.74\%$ and $7.43\%$ are attained, after training for 25 epochs. These results are typical of the performance of a 1-layer NN model for the MNIST dataset. There exist more complex models such as convolutional neural networks that can achieve errors of less than $1\%$. Apart from recognizing handwritten digits, ML has also been deployed in several applications in computer vision and natural language processing.
 
 
 
