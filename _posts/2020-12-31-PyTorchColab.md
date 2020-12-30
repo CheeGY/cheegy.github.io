@@ -24,13 +24,13 @@ Before going into the details of the code implementation, let's briefly introduc
 
 ![alt text](/assets/img/torch_logo.png "Pytorch")
 
-[PyTorch](https://pytorch.org/) is a machine learning/deep learning open source library, based on the programming language, Python. It provides two key features; tensor computing through GPUs, as well as neural networks based on an automatic differentiation system. What makes PyTorch popular among data scientists and AI enthusiasts is its ability to parallelize computations using GPUs, and this speeds up training and data processing significantly.
+[PyTorch](https://pytorch.org/) is a machine learning/deep learning open source library, based on the programming language, Python. It provides two key features; tensor computing through GPUs, as well as neural networks based on an automatic differentiation system. What makes PyTorch popular among data scientists and AI enthusiasts is its ability to parallelize computations using GPUs, and that speeds up training and data processing significantly.
 
 ## What is Google Colab?
 
 ![alt text](/assets/img/colab_logo.png "Google Colab")
 
-[Google Colab](https://colab.research.google.com/) is an web-based application that allows you to write and execute Python, right from your browser. Colab has several libraries pre-installed, including PyTorch. This allows users with Google accounts to use PyTorch in Colab immediately, without any further installation.
+[Google Colab](https://colab.research.google.com/) is an web-based application that allows you to write and execute Python, right from your browser. Colab has several libraries pre-installed, including PyTorch. This allows users with Google accounts to use PyTorch and many machine learning libraries in Colab immediately, without any further installation.
 
 ---
 
