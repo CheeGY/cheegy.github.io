@@ -45,19 +45,19 @@ import torch.optim as optim
 import torchvision as thv
 from torch.utils.data import DataLoader, TensorDataset
 
-device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
+device  = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
 
 # Load the MNIST dataset from torchvision
-train = thv.datasets.MNIST('./', download=True, train=True)
-val = thv.datasets.MNIST('./', download=True, train=False)
+train   = thv.datasets.MNIST('./', download=True, train=True)
+val     = thv.datasets.MNIST('./', download=True, train=False)
 
 # Reshape training and validation features from (batch_size,28,28) to (batch_size,28*28) and attach to GPU
-xtrain = train.data.view(-1, 28*28).to(device)
-xval = val.data.view(-1, 28*28).to(device)
+xtrain  = train.data.view(-1, 28*28).to(device)
+xval    = val.data.view(-1, 28*28).to(device)
 
 # Normalize training and validation features from [0,255] to [0,1] 
-xtrain = xtrain/255.0
-xval = xval/255.0
+xtrain  = xtrain/255.0
+xval    = xval/255.0
 
 # Attach training and validation labels to GPU
 ytrain = train.targets.to(device)
@@ -80,10 +80,10 @@ Next, we construct a simple 1-layer linear neural network as our model, using Re
 
 ```python
 D_in, D_out = 784, 10
-model = torch.nn.Sequential(
-    torch.nn.Linear(D_in, D_out),
-    torch.nn.ReLU(),
-).to(device)
+model       = torch.nn.Sequential(
+                torch.nn.Linear(D_in, D_out),
+                torch.nn.ReLU(),
+                ).to(device)
 ```
 
 ---
@@ -91,18 +91,18 @@ model = torch.nn.Sequential(
 ## Model training and validation (prediction)
 We then implement the following module, where the model is trained and learns patterns/features in the images. Since we are dealing with a multi-class classification problem, the cross entropy loss is used as the objective function. Stochastic gradient descent (SGD) is used as the optimizer. 
 
-```python3
-num_epochs = 15
-learning_rate = 0.08
-criterion = nn.CrossEntropyLoss()
-optimizer = torch.optim.SGD(model.parameters(), lr=learning_rate)
-train_loss = 0.0
-val_loss = 0.0
-total = 0.0
-num_correct = 0.0
-train_out = torch.zeros(size=(num_epochs*len(train_dataloader), 2))
-val_out = torch.zeros(size=(torch.ceil(torch.mul(num_epochs*len(train_dataloader),0.002)).type(torch.int32), 2))
-val_step = 0
+```python
+num_epochs      = 15
+learning_rate   = 0.08
+criterion       = nn.CrossEntropyLoss()
+optimizer       = torch.optim.SGD(model.parameters(), lr=learning_rate)
+train_loss      = 0.0
+val_loss        = 0.0
+total           = 0.0
+num_correct     = 0.0
+train_out       = torch.zeros(size=(num_epochs*len(train_dataloader), 2))
+val_out         = torch.zeros(size=(torch.ceil(torch.mul(num_epochs*len(train_dataloader),0.002)).type(torch.int32), 2))
+val_step        = 0
 for t in range(num_epochs):
   for idx, (x, y) in enumerate(train_dataloader, 0):
     x, y = x.to(device), y.to(device)
