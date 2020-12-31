@@ -1,8 +1,8 @@
 ---
 layout: post
-title: "Recognizing Handwritten Digits using Machine Learning - PyTorch and Colab"
+title: "Recognizing Handwritten Digits using Machine Learning - An Example in PyTorch and Colab"
 author: "Kong Yao"
-categories: journal
+categories: posts
 tags: [machine learning]
 image: post4.jpg
 ---
@@ -10,7 +10,7 @@ One of the most explored applications in the field of machine learning (ML) is t
 
 In this example, we use the famous MNIST (Modified National Institute of Standards and Technology) dataset, which is the de facto "Hello World" dataset for computer vision. It contains images of handwritten digits ($0$ to $9$) and below are some samples of the images in the dataset,
 
-![alt text](/assets/img/sample_mnist.PNG "MNIST samples")
+![alt text](/assets/img/post4/sample_mnist.PNG "MNIST samples")
 
 Observe that some of these digits can be quite ambiguous, and may even be difficult for humans to recognize. With machine learning, the objective is to construct a computational model that recognizes these digits automatically and with high accuracy.
 
@@ -24,7 +24,7 @@ Before going into the details of the code implementation, let's briefly introduc
 
 ## What is PyTorch?
 
-![alt text](/assets/img/torch_logo.png "Pytorch")
+![alt text](/assets/img/post4/torch_logo.png "Pytorch")
 
 [PyTorch](https://pytorch.org/) is a machine learning/deep learning open source library, based on the programming language, Python. It provides two key features; tensor computing through GPUs, as well as neural networks based on an automatic differentiation system. What makes PyTorch popular among data scientists and AI enthusiasts is its ability to parallelize computations using GPUs, and that speeds up training and data processing significantly.
 
@@ -33,7 +33,7 @@ Before going into the details of the code implementation, let's briefly introduc
 
 ## What is Google Colab?
 
-![alt text](/assets/img/colab_logo.png "Google Colab")
+![alt text](/assets/img/post4/colab_logo.png "Google Colab")
 
 [Google Colab](https://colab.research.google.com/) is an web-based application that allows you to write and execute Python, right from your browser. Colab has several libraries pre-installed, including PyTorch. This allows users with Google accounts to use PyTorch and many machine learning libraries in Colab immediately, without any further installation.
 
@@ -155,7 +155,7 @@ for t in range(num_epochs):
 
 ## Results and Conclusion
 
-![alt text](/assets/img/post4_train_valid_error.PNG "Training and Validation errors")
+![alt text](/assets/img/post4/post4_train_valid_error.PNG "Training and Validation errors")
 
 In this example, training and validation errors of $9.74\%$ and $7.43\%$ are attained, after training for $25$ epochs. These results are typical of the performance of a 1-layer NN model for the MNIST dataset. There exist more complex models such as convolutional neural networks that can achieve errors of less than $1\%$. Apart from recognizing handwritten digits, ML has also been deployed in several applications in computer vision and natural language processing.
 

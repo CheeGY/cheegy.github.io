@@ -2,9 +2,9 @@
 layout: post
 title: "Images and Kernels of Linear Maps and Bijectivity"
 author: "Kong Yao"
-categories: journal
+categories: posts
 tags: [linear algebra, analysis]
-image: sg1.jpg
+image: post1.jpg
 ---
 This note elaborates on the relationship between the image and kernel of linear maps and the two components of bijectivity, namely injectivity and surjectivity. In a first course in linear systems theory, the following two facts are often presented as pseudo-definitions, and may not be immediately obvious nor intuitive. Below is an attempt to give more intuition to these facts using more precise mathematical terms.
 

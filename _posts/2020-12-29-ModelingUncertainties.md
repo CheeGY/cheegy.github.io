@@ -2,7 +2,7 @@
 layout: post
 title: "Modeling of Uncertainties"
 author: "Kong Yao"
-categories: journal
+categories: posts
 tags: [Linear systems]
 image: post3.jpg
 ---

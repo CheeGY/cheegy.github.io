@@ -2,7 +2,7 @@
 layout: post
 title: "Schur Complement Lemma and some Simple Applications"
 author: "Kong Yao"
-categories: journal
+categories: posts
 tags: [LMIs, robust control]
 image: post2.jpg
 ---
