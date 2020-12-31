@@ -8,7 +8,7 @@ image: post4.jpg
 ---
 One of the most explored applications in the field of machine learning (ML) is the recognition of handwritten digits from low-resolution images. In this note, we provide a basic PyTorch implementation that is compatible with Google Colab. Due to its simplicity, it is suitable for anyone who may be interested to get started with PyTorch and Colab.
 
-In this example, we use the famous MNIST (Modified National Institute of Standards and Technology) dataset, which is the de facto "Hello World" dataset for computer vision. It contains images of handwritten digits ($0$ to $9$) and below are some samples of the images in the dataset,
+In this example, we use the famous MNIST (Modified National Institute of Standards and Technology) dataset, which is the de facto "Hello World" dataset for computer vision. It contains images of handwritten digits ($0$ to $9$) and below are some sample images in the dataset,
 
 ![alt text](/assets/img/post4/sample_mnist.PNG "MNIST samples")
 
@@ -17,6 +17,12 @@ Observe that some of these digits can be quite ambiguous, and may even be diffic
 To achieve this, the first step is to construct and train the ML model, using one part of the dataset. This training process allows the model to **learn** important patterns, also known as features, found in these images. This first part of the dataset is often called the *training dataset*. 
 
 Next, using what it has learned in the training process, the model attempts to **predict** the digits in the images of the other part of the dataset, also known as the *validation dataset*.
+
+Typical of a supervised ML application, there are three main ingredients to consider
+
+- Dataset: In this example, that would be MNIST.
+- Model: A simple 1-layer linear neural network is implemented for this example (see below).
+- Performance metric: This is a multi-class classification problem, which can be alternatively interpreted as a sorting problem; there are $10$ bins labeled $0$ to $9$ and ideally, we want to sort the images correctly into each of these bins. In this example, we use the [cross-entropy loss](https://pytorch.org/docs/stable/generated/torch.nn.CrossEntropyLoss.html), as it measures how accurate the model sorts the images.
 
 Before going into the details of the code implementation, let's briefly introduce PyTorch and Google Colab.
 
@@ -69,11 +75,11 @@ ytrain  = train.targets.to(device)
 yval    = val.targets.to(device)
 
 # Set training and validation dataloaders 
-train_dataset   = TensorDataset(xtrain, ytrain)
-train_dataloader= DataLoader(train_dataset, batch_size=32, shuffle=True)
+train_dataset    = TensorDataset(xtrain, ytrain)
+train_dataloader = DataLoader(train_dataset, batch_size=32, shuffle=True)
 
-val_dataset     = TensorDataset(xval, yval)
-val_dataloader  = DataLoader(val_dataset, batch_size=32,shuffle=False)
+val_dataset      = TensorDataset(xval, yval)
+val_dataloader   = DataLoader(val_dataset, batch_size=32,shuffle=False)
 ```
 
 Another convenient aspect about Colab and PyTorch is that any code snippet can be copied or extracted directly into a Jupyter notebook embedded in Colab and can be executed immediately. For a better understanding, try it out yourself in [Colab](https://colab.research.google.com/).
@@ -81,7 +87,7 @@ Another convenient aspect about Colab and PyTorch is that any code snippet can b
 ----
 
 ## Model Construction
-Next, a simple 1-layer linear neural network is constructed. This model uses ReLU activation functions and the *torch.nn.Sequential* module in PyTorch. Documentation for these functions can be found [here](https://pytorch.org/docs/stable/generated/torch.nn.ReLU.html) and [here](https://pytorch.org/docs/stable/generated/torch.nn.Sequential.html).
+For the model, a simple 1-layer linear neural network is constructed. It takes in input images of size $28\times28$ pixels, passes them through a linear layer of $784$ ($28 \times 28$) nodes and generates a 10-dimensional output vector. This model uses ReLU activation functions and the *torch.nn.Sequential* module in PyTorch. Documentation for these functions can be found [here](https://pytorch.org/docs/stable/generated/torch.nn.ReLU.html) and [here](https://pytorch.org/docs/stable/generated/torch.nn.Sequential.html).
 
 ```python
 D_in, D_out = 784, 10
@@ -94,7 +100,7 @@ model       = torch.nn.Sequential(
 ---
 
 ## Model Training and Validation (prediction)
-The following module is then implemented to **train** the model so that it learns patterns/features in the given images. Since this is a multi-class classification problem, the [cross entropy loss](https://pytorch.org/docs/stable/generated/torch.nn.CrossEntropyLoss.html) is used as the objective function. [Stochastic gradient descent](https://pytorch.org/docs/stable/optim.html?highlight=sgd%20optim#torch.optim.SGD) (SGD) is used as the optimizer. 
+The following module is then implemented to **train** the model so that it learns patterns/features in the given images. Since this is a multi-class classification problem, the [cross-entropy loss](https://pytorch.org/docs/stable/generated/torch.nn.CrossEntropyLoss.html) is used as the objective function. [Stochastic gradient descent](https://pytorch.org/docs/stable/optim.html?highlight=sgd%20optim#torch.optim.SGD) (SGD) is used as the optimizer. 
 
 ```python
 num_epochs      = 25
