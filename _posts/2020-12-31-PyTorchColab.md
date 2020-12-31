@@ -22,7 +22,7 @@ Typical of a supervised ML application, there are three main ingredients to cons
 
 - Dataset: In this example, that would be MNIST.
 - Model: A simple 1-layer linear neural network is implemented for this example (see below).
-- Performance metric: This is a multi-class classification problem, which can be alternatively interpreted as a sorting problem; there are $10$ bins labeled $0$ to $9$ and ideally, we want to sort the images correctly into each of these bins. In this example, we use the [cross-entropy loss](https://pytorch.org/docs/stable/generated/torch.nn.CrossEntropyLoss.html), as it measures how accurate the model sorts the images.
+- Performance metric: This is a classification problem with multiple classes, and hence it can be alternatively interpreted as a sorting problem. There are 10 bins labeled $0$ to $9$ and we want to sort the images correctly into each of these bins, based on the digit written on it. In this example, we use the [cross-entropy loss](https://pytorch.org/docs/stable/generated/torch.nn.CrossEntropyLoss.html), as it measures how accurate the model sorts the images.
 
 Before going into the details of the code implementation, let's briefly introduce PyTorch and Google Colab.
 
