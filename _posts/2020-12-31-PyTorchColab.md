@@ -18,7 +18,7 @@ To achieve this, the first step is to construct and train the ML model, using on
 
 Next, using what it has learned in the training process, the model attempts to **predict** the digits in the images of the other part of the dataset, also known as the *validation dataset*.
 
-Typical of a supervised ML application, there are three main ingredients to consider
+Typical of a supervised ML application, there are three main ingredients to consider,
 
 - Dataset: In this example, that would be MNIST.
 - Model: A simple 1-layer linear neural network is implemented for this example (see below).
@@ -163,7 +163,7 @@ for t in range(num_epochs):
 ```    
 ---
 
-## Results and Conclusion
+## Conclusion
 
 ![alt text](/assets/img/post4/post4_train_valid_error.PNG "Training and Validation errors")
 
