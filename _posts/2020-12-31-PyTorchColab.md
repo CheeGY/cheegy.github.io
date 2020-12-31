@@ -99,7 +99,7 @@ model       = torch.nn.Sequential(
 
 Schematically, this is how a 1-layer neural network looks like. The left column represents the 784 pixels in the input images. Each of these pixels is connected to every node in the linear layer. Each node in the linear layer is coupled with a ReLU activation function. The output of this layer is then passed through the performance metric to access which digit does the image corresponds to. 
 
-![alt text](/assets/img/post4/1layer_nn.PNG "1-layer NN")
+![alt text](/assets/img/post4/1layer_nn.PNG "1-layer NN 1")
 
 ---
 
