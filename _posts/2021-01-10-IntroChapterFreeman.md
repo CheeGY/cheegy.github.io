@@ -1,12 +1,12 @@
 ---
 layout: post
-title: "Introductory Chapter from "Robust Nonlinear Control Design""
+title: "Introductory Chapter from \"Robust Nonlinear Control Design\""
 author: "Kong Yao"
 categories: posts
 tags: [robust control]
 image: post5.jpg
 ---
-This note provides key ideas and takeaways from the introductory chapter of the book, "Robust Nonlinear Control Design", by R. Freeman and P. Kokotovic. The other purpose of this note is to provide explicit references (titles, authors etc.) immediately after they are cited in this chapter, to facilitate future reference.
+This note provides key ideas and takeaways from the introductory chapter of the book, "Robust Nonlinear Control Design", by R. Freeman and P. Kokotovic. The other purpose of this note is to provide explicit references (titles, authors etc.) immediately after they are cited, in order to facilitate future reference.
 
 ---
 
