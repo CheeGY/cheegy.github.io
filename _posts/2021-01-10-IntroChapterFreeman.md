@@ -24,7 +24,7 @@ In this framework, it is often assumed that $G$ is linear, finite-dimensional an
 Frequency domain methods are ubiquitous in robust linear control, but seldom seen in robust nonlinear control. State space methods are more common and have been more thoroughly developed for nonlinear systems.
 
 One approach to determine stability of feedback connections of separate subsystems is to use nonlinear input-output methods, which are closely related to concepts in Lyapunov stability theory, detailed in these references:
-###Nonlinear input-output methods:
+### Nonlinear input-output methods:
 - I. W. Sandberg, _On the L2-boundedness of solutions of nonlinear functional equations, Bell Sys. Tech. J., 43 (1964), pp. 1581-1599. 
 - G. Zames, _On the input-output stability of time-varying nonlinear feedback systems. Part I: Conditions using concepts of loop gain, conicity, and positivity_, IEEE Trans. Automat. Contr., 11 (1966), pp. 228-238.
 - G. Zames, _On the input-output stability of time-varying nonlinear feedback systems. Part II: Conditions involving circles in the frequency plane and sector nonlinearities_, IEEE Trans. Automat. Contr., 11 (1966), pp. 465-476. 
@@ -32,7 +32,7 @@ One approach to determine stability of feedback connections of separate subsyste
 - M. Safonov, _Stability and Robustness of Multivariable Feedback Systems_, MIT Press, Cambridge, Massachusetts, 1980. 
 - A. R. Teel, T. T. Georgiou, L. Praly, and E. D. Sontag, _Input-output stability, in The Control Handbook_, W. S. Levine, ed., CRC Press, 1996, pp. 895-908.
 
-###Lyapunov stability theory
+### Lyapunov stability theory
 - A. M. Lyapunov, _Probleme general de la stabilite du mouvement, Ann. Fac. Sci. Toulouse, 9 (1907)_, pp. 203-474. In French
 - T. Yoshizawa, _Stability Theory by Liapunov's Second Method_, The Mathematical Society of Japan, Gakujutsutosho Printing Co., Ltd., Tokyo, 1966.
 - W. Hahn, _Stability of Motion_, Springer-Verlag, New York, 1967. 
@@ -76,17 +76,17 @@ Finally, the concept of input-to-state stability (ISS) led to an input-output me
 - Z.-P. Jiang, I. Mareels, and Y. Wang, _A Lyapunov formulation of nonlinear small gain theorem for interconnected systems_, in Proceedings of the IFAC Nonlinear Control Systems Design Symposium, Tahoe City, California, June 1995, pp. 666-671. 
 
 In Chapter 3 of the book, a Lyapunov framework that combines the guaranteed stability and ISS frameworks is developed. In the problem formulation, set-valued maps are used to describe constraints. Usage of set-valued maps in control theory dates back to the early sixties and is currently used in viability theory for differential inclusions and nonsmooth analysis. Here are the references:
-###Set-valued maps
+### Set-valued maps
 - A. F. Filippov, _On certain questions in the theory of optimal control_, SIAM J. Control, 1 (1962), pp. 76-84. 
 - T. Wazewski, _On an optimal control problem_, in Proceedings of the Conference on Differential Equations and Their Applications, Prague, 1963, pp. 229-242. 
 
-###Viability Theory for differential inclusions
+### Viability Theory for differential inclusions
 - J. S. Shamma, _Construction of nonlinear feedback for l1-optimal control_, in Proceedings of the 33rd IEEE Conference on Decision and Control, Lake Buena Vista, Florida, Dec. 1994, pp. 40-45.
 - J. S. Shamma, _Optimization of the e~-induced norm under full state feedback_, IEEE Trans. Automat. Contr., 41 (1996). To appear. 
 - J.-P. Aubin, _Viability Theory_, Birkhs Boston, 1991. 
 - M. Kisielewicz, _Differential Inclusions and Optimal Control_, PWN-Polish Scientific Publishers, Warszawa, Poland, 1991.
 
-###Nonsmooth analysis
+### Nonsmooth analysis
 - F. H. Clarke, _Qualitative properties of trajectories of control systems: A survey_, J. Dynam. Contr. Syst. To appear. 
 - B. S. Mordukhovich, _Generalized differential calculus for nonsmooth and set-valued mappings_, Journal of Mathematical Analysis and Applications, 183 (1994), pp. 250-288. 
 - B. S. Mordukhovich, _Necessary optimality and conhvllability conditions for nonsmooth control systems_, in Proceedings of the 33rd IEEE Conference on Decision and Control, Lake Buena Vista, Florida, Dec. 1994, pp. 3992-3997. 
