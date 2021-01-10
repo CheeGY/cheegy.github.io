@@ -1,5 +1,8 @@
 <head>
-
+  {% if page.use_math %}
+    {% include mathjax_support.html %}
+  {% endif %}
+  
   <title>
     {% if page.title == "Home" %}
       {{ site.title }} | {{ site.description }}
@@ -33,10 +36,6 @@
         }
       });
   </script>
-  
-  {% if page.use_math %}
-  {% include mathjax_support.html %}
-  {% endif %}
 
   <!-- Google Analytics -->
   {% include google-analytics.html %}
