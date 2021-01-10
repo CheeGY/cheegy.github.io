@@ -2,6 +2,7 @@
   {% if page.use_math %}
     {% include mathjax_support.html %}
   {% endif %}
+  {{ markdownify }}
   
   <title>
     {% if page.title == "Home" %}
