@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "_Robust Nonlinear Control Design_: Introduction"
+title: "_Robust Nonlinear Control Design_: Introduction (Part I)"
 author: "Kong Yao"
 categories: posts
 tags:
