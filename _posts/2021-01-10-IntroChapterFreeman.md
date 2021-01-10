@@ -45,6 +45,8 @@ An alternative formulation is to apply the theory of dissipativity, where a Lyap
 - D. J. Hill and P. J. Moylan, _Connections between finite-gain and asymptotic stability_, IEEE Trans. Automat. Contr., 25 (1980), pp. 931-936. 
 - D. J. Hill, _Dissipative nonlinear systems: Basic properties and stability analysis_, in Proceedings of the 31st IEEE Conference on Decision and Control, Tucson, Arizona, Dec. 1992, pp. 3259-3264. 
 
+---
+
 There exist a number of robust nonlinear control frameworks and here are three that are relevant in this book. The first is the Lyapunov min-max approach, also known as "guaranteed stability", with the following references:
 - G. Leitmann, _Guaranteed ultimate boundedness for a class of uncertain linear dynamical systems_, IEEE Trans. Automat. Contr., 23 (1978), pp. 1109-1110. 
 - S. Gutman, _Uncertain dynamical systems--Lyapunov min-max approach_, IEEE Trans. Automat. Contr., 24 (1979), pp. 437-443. 
@@ -74,6 +76,8 @@ Finally, the concept of input-to-state stability (ISS) led to an input-output me
 - E. D. Sontag and Y. Wang, _On characterizations of the input-to-state stability property_, Syst. Contr. Lett., 24 (1995), pp. 351-359. 
 - E. D. Sontag and Y. Wang, _New characterizations of input-to-state stability_, in Proceedings of the Conference on Information Sciences and Systems, Princeton, New Jersey, Mar. 1996. To appear. 
 - Z.-P. Jiang, I. Mareels, and Y. Wang, _A Lyapunov formulation of nonlinear small gain theorem for interconnected systems_, in Proceedings of the IFAC Nonlinear Control Systems Design Symposium, Tahoe City, California, June 1995, pp. 666-671. 
+
+---
 
 In Chapter 3 of the book, a Lyapunov framework that combines the guaranteed stability and ISS frameworks is developed. In the problem formulation, set-valued maps are used to describe constraints. Usage of set-valued maps in control theory dates back to the early sixties and is currently used in viability theory for differential inclusions and nonsmooth analysis. Here are the references:
 ### Set-valued maps
