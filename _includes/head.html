@@ -2,7 +2,6 @@
   {% if page.use_math %}
     {% include mathjax_support.html %}
   {% endif %}
-  {{ markdownify }}
   
   <title>
     {% if page.title == "Home" %}
@@ -10,6 +9,7 @@
     {% else %}
       {{ page.title}} | {{ site.title }}
     {% endif %}
+    {{ markdownify }}
   </title>
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
