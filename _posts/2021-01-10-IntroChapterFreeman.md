@@ -3,7 +3,9 @@ layout: post
 title: "*Robust Nonlinear Control Design*: Introduction"
 author: "Kong Yao"
 categories: posts
-tags: [robust control, nonlinear control]
+tags:
+- robust control
+- nonlinear control
 image: post5.jpg
 use_math: true
 ---
