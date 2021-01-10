@@ -25,7 +25,7 @@ Frequency domain methods are ubiquitous in robust linear control, but seldom see
 
 One approach to determine stability of feedback connections of separate subsystems is to use nonlinear input-output methods, which are closely related to concepts in Lyapunov stability theory, detailed in these references:
 ### Nonlinear input-output methods:
-- I. W. Sandberg, _On the L2-boundedness of solutions of nonlinear functional equations, Bell Sys. Tech. J., 43 (1964), pp. 1581-1599. 
+- I. W. Sandberg, _On the L2-boundedness of solutions of nonlinear functional equations_, Bell Sys. Tech. J., 43 (1964), pp. 1581-1599. 
 - G. Zames, _On the input-output stability of time-varying nonlinear feedback systems. Part I: Conditions using concepts of loop gain, conicity, and positivity_, IEEE Trans. Automat. Contr., 11 (1966), pp. 228-238.
 - G. Zames, _On the input-output stability of time-varying nonlinear feedback systems. Part II: Conditions involving circles in the frequency plane and sector nonlinearities_, IEEE Trans. Automat. Contr., 11 (1966), pp. 465-476. 
 - C. A. Desoer and M. Vidyasagar, _Feedback Systems: Input-Output Properties_, Academic Press, New York, 1975. 
