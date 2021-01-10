@@ -11,7 +11,9 @@ This note provides key ideas and takeaways from the introductory chapter of the 
 
 ---
 
-A popular robust control paradigm is of the form shown in Figure 1, consisting of a nominal plant $G$, a controller $K$ and an uncertainty $\Delta$. The objective in the robust control design is to compute $K$ such that it can guarantee closed-loop stability and performance, for every $\Delta$ in a given family of uncertainties, $\mathcal{F}_{\Delta}$. Hence, choosing an suitable $\mathcal{F}_{\Delta}$ is also critical in the robust control design.
+A popular robust control paradigm is shown in Figure 1.1, consisting of a nominal plant $G$, a controller $K$ and an uncertainty $\Delta$. The objective in this robust control framework is to design $K$ such that it guarantees closed-loop stability and performance, for every $\Delta$ in a given family of uncertainties, $\mathcal{F}_{\Delta}$. Hence, choosing an suitable $\mathcal{F}_{\Delta}$ is also critical in the robust control design.
+
+![alt text](/assets/img/post5/rc_paradigm.PNG "Robust control paradigm")
 
 In this framework, it is often assumed that $G$ is linear, finite-dimensional and time-invariant, and any form of nonlinearities can be encapsulated by choosing appropriate families, $\mathcal{F}_{\Delta}$. A large variety of these families have been considered and they include families of structured or unstructured uncertainties, time-invariant or time-varying uncertainties etc. The authors claim that this approach neglects the information on the nonlinearities and resulting control designs may be too conservative.
 
