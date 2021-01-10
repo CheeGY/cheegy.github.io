@@ -24,7 +24,7 @@ In this framework, it is often assumed that $G$ is linear, finite-dimensional an
 Frequency domain methods are ubiquitous in robust linear control, but seldom seen in robust nonlinear control. State space methods are more common and have been more thoroughly developed for nonlinear systems.
 
 One approach to determine stability of feedback connections of separate subsystems is to use nonlinear input-output methods, which are closely related to concepts in Lyapunov stability theory, detailed in these references:
-### Nonlinear input-output methods:
+### Nonlinear input-output methods
 - I. W. Sandberg, _On the L2-boundedness of solutions of nonlinear functional equations_, Bell Sys. Tech. J., 43 (1964), pp. 1581-1599. 
 - G. Zames, _On the input-output stability of time-varying nonlinear feedback systems. Part I: Conditions using concepts of loop gain, conicity, and positivity_, IEEE Trans. Automat. Contr., 11 (1966), pp. 228-238.
 - G. Zames, _On the input-output stability of time-varying nonlinear feedback systems. Part II: Conditions involving circles in the frequency plane and sector nonlinearities_, IEEE Trans. Automat. Contr., 11 (1966), pp. 465-476. 
@@ -39,6 +39,7 @@ One approach to determine stability of feedback connections of separate subsyste
 - H. K. Khalil, _Nonlinear Systems_, Prentice Hall, Upper Saddle River, New Jersey, second ed., 1996.
 - M. Vidyasagar, _Nonlinear Systems Analysis_, Prentice-Hall, Englewood Cliffs, New Jersey, second ed., 1993. 
 
+### Dissipativity theory
 An alternative formulation is to apply the theory of dissipativity, where a Lyapunov-like storage function is used to provide connections between input/output and state space stability. References of this approach can be found in:
 - J. C. Willems, _Dissipative dynamical systems, Part I: General theory_, Arch. Rational Mech. Anal., 45 (1972), pp. 321-351.
 - D. J. Hill and P. J. Moylan, _The stability of nonlinear dissipative systems_, IEEE Trans. Automat. Contr., 21 (1976), pp. 708-711. 
@@ -48,12 +49,14 @@ An alternative formulation is to apply the theory of dissipativity, where a Lyap
 ---
 
 There exist a number of robust nonlinear control frameworks and here are three that are relevant in this book. The first is the Lyapunov min-max approach, also known as "guaranteed stability", with the following references:
+### Guaranteed stability
 - G. Leitmann, _Guaranteed ultimate boundedness for a class of uncertain linear dynamical systems_, IEEE Trans. Automat. Contr., 23 (1978), pp. 1109-1110. 
 - S. Gutman, _Uncertain dynamical systems--Lyapunov min-max approach_, IEEE Trans. Automat. Contr., 24 (1979), pp. 437-443. 
 - G. Leitmann, _Guaranteed asymptotic stability for some linear systems with bounded uncertainties_, ASME J. Dynam. Syst. Meas. Contr., 101 (1979), pp. 212-216. 
 - M. J. Corless and G. Leitmann, _Continuous state feedback guaranteeing uniform ultimate boundedness for uncertain dynamic systems_, IEEE Trans. Automat. Contr., 26 (1981), pp. 1139-1144.
 - B. R. Barmish, M. J. Corless, and G. Leitmann, _A new class of stabilizing controllers for uncertain dynamical systems_, SIAM J. Contr. Optimiz., 21 (1983), pp. 246-255. 
 
+### Nonlinear $H_{\infty}$ control
 With the theory of dissipativity, the application of game theory led to nonlinear $H_{\infty}$ approach to robust nonlinear control, which can be found in:
 - T. Basar and P. Bernhard, _Hinfinity-Optimal Control and Related Minimax Design Problems_, Birkh~user, Boston, second ed., 1995. 
 - A. J. Van Der Schaft, _On a state space approach to nonlinear Hinfinity control_, Syst. Contr. Lett., 16 (1991), pp. 1-8. 
@@ -63,6 +66,7 @@ With the theory of dissipativity, the application of game theory led to nonlinea
 - A. J. Krener, _Necessary and sufficient conditions for nonlinear worst case (Hinfinity) control and estimation_, J. Math. Syst. Estim. Contr. To appear. 
 - M. R. James and J. S. Baras, _Robust Hinfinity output feedback control for nonlinear systems_, IEEE Trans. Automat. Contr., 40 (1995), pp. 1007-1017.
 
+### Input-to-state stability (ISS)
 Finally, the concept of input-to-state stability (ISS) led to an input-output method related to Lyapunov stability,
 - E. D. Sontag, _Further facts about input to state stabilization_, IEEE Trans. Automat. Contr., 35 (1990), pp. 473-476. 
 - E. D. Sontag, _Input/output and state-space stability_, in New Trends in System Theory, Birkh~user, Boston, 1991. 
