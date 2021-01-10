@@ -19,31 +19,31 @@ In this framework, it is often assumed that $G$ is linear, finite-dimensional an
 
 ---
 
-# Lyapunov Framework for Robust Control
+## Lyapunov Framework for Robust Control
 
 Frequency domain methods are ubiquitous in robust linear control, but seldom seen in robust nonlinear control. State space methods are more common and have been more thoroughly developed for nonlinear systems.
 
 One approach to determine stability of feedback connections of separate subsystems is to use nonlinear input-output methods, which are closely related to concepts in Lyapunov stability theory, detailed in these references:
 
-- A. M. Lyapunov, Probleme general de la stabilite du mouvement, Ann. Fac. Sci. Toulouse, 9 (1907), pp. 203-474. In French
-- T. Yoshizawa, Stability Theory by Liapunov's Second Method, The Mathematical Society of Japan, Gakujutsutosho Printing Co., Ltd., Tokyo, 1966.
-- W. Hahn, Stability of Motion, Springer-Verlag, New York, 1967. 
-- H. K. Khalil, Nonlinear Systems, Prentice Hall, Upper Saddle River, New Jersey, second ed., 1996.
-- M. Vidyasagar, Nonlinear Systems Analysis, Prentice-Hall, Englewood Cliffs, New Jersey, second ed., 1993. 
+- A. M. Lyapunov, _Probleme general de la stabilite du mouvement, Ann. Fac. Sci. Toulouse, 9 (1907)_, pp. 203-474. In French
+- T. Yoshizawa, _Stability Theory by Liapunov's Second Method_, The Mathematical Society of Japan, Gakujutsutosho Printing Co., Ltd., Tokyo, 1966.
+- W. Hahn, _Stability of Motion_, Springer-Verlag, New York, 1967. 
+- H. K. Khalil, _Nonlinear Systems_, Prentice Hall, Upper Saddle River, New Jersey, second ed., 1996.
+- M. Vidyasagar, _Nonlinear Systems Analysis_, Prentice-Hall, Englewood Cliffs, New Jersey, second ed., 1993. 
 
-Nonlinear input-output methods can be found in:
-- I. W. Sandberg, On the L2-boundedness of solutions of nonlinear functional equations, Bell Sys. Tech. J., 43 (1964), pp. 1581-1599. 
-- G. Zames, On the input-output stability of time-varying nonlinear feedback systems. Part I: Conditions using concepts of loop gain, conicity, and positivity, IEEE Trans. Automat. Contr., 11 (1966), pp. 228-238.
-- G. Zames, On the input-output stability of time-varying nonlinear feedback systems. Part II: Conditions involving circles in the frequency plane and sector nonlinearities, IEEE Trans. Automat. Contr., 11 (1966), pp. 465-476. 
-- C. A. Desoer and M. Vidyasagar, Feedback Systems: Input-Output Properties, Academic Press, New York, 1975. 
-- M. Safonov, Stability and Robustness of Multivariable Feedback Systems, MIT Press, Cambridge, Massachusetts, 1980. 
-- A. R. Teel, T. T. Georgiou, L. Praly, and E. D. Sontag, Input-output stability, in The Control Handbook, W. S. Levine, ed., CRC Press, 1996, pp. 895-908.
+Nonlinear input-output methods are described in:
+- I. W. Sandberg, _On the L2-boundedness of solutions of nonlinear functional equations, Bell Sys. Tech. J., 43 (1964), pp. 1581-1599. 
+- G. Zames, _On the input-output stability of time-varying nonlinear feedback systems. Part I: Conditions using concepts of loop gain, conicity, and positivity_, IEEE Trans. Automat. Contr., 11 (1966), pp. 228-238.
+- G. Zames, _On the input-output stability of time-varying nonlinear feedback systems. Part II: Conditions involving circles in the frequency plane and sector nonlinearities_, IEEE Trans. Automat. Contr., 11 (1966), pp. 465-476. 
+- C. A. Desoer and M. Vidyasagar, _Feedback Systems: Input-Output Properties_, Academic Press, New York, 1975. 
+- M. Safonov, _Stability and Robustness of Multivariable Feedback Systems_, MIT Press, Cambridge, Massachusetts, 1980. 
+- A. R. Teel, T. T. Georgiou, L. Praly, and E. D. Sontag, _Input-output stability, in The Control Handbook_, W. S. Levine, ed., CRC Press, 1996, pp. 895-908.
 
-The theory of dissipativity , where a Lyapunov-like storage function is used to provide connections between input/output and state space stability and references can be found in:
-- J. C. Willems, Dissipative dynamical systems, Part I: General theory, Arch. Rational Mech. Anal., 45 (1972), pp. 321-351.
-- D. J. Hill and P. J. Moylan, The stability of nonlinear dissipative systems, IEEE Trans. Automat. Contr., 21 (1976), pp. 708-711. 
-- D. J. Hill and P. J. Moylan, Connections between finite-gain and asymptotic stability, IEEE Trans. Automat. Contr., 25 (1980), pp. 931-936. 
-- D. J. Hill, Dissipative nonlinear systems: Basic properties and stability analysis, in Proceedings of the 31st IEEE Conference on Decision and Control, Tucson, Arizona, Dec. 1992, pp. 3259-3264. 
+An alternative formulation is to apply the theory of dissipativity, where a Lyapunov-like storage function is used to provide connections between input/output and state space stability. References of this approach can be found in:
+- J. C. Willems, _Dissipative dynamical systems, Part I: General theory_, Arch. Rational Mech. Anal., 45 (1972), pp. 321-351.
+- D. J. Hill and P. J. Moylan, _The stability of nonlinear dissipative systems_, IEEE Trans. Automat. Contr., 21 (1976), pp. 708-711. 
+- D. J. Hill and P. J. Moylan, _Connections between finite-gain and asymptotic stability_, IEEE Trans. Automat. Contr., 25 (1980), pp. 931-936. 
+- D. J. Hill, _Dissipative nonlinear systems: Basic properties and stability analysis_, in Proceedings of the 31st IEEE Conference on Decision and Control, Tucson, Arizona, Dec. 1992, pp. 3259-3264. 
 
 
 
