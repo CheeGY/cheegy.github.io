@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Introductory Chapter from \"Robust Nonlinear Control Design\""
+title: "Introduction to \"_Robust Nonlinear Control Design_\""
 author: "Kong Yao"
 categories: posts
 tags: [robust control]
@@ -62,12 +62,24 @@ With the theory of dissipativity, the application of game theory led to nonlinea
 - M. R. James and J. S. Baras, _Robust Hinfinity output feedback control for nonlinear systems_, IEEE Trans. Automat. Contr., 40 (1995), pp. 1007-1017.
 
 Finally, the concept of input-to-state stability (ISS) led to an input-output method related to Lyapunov stability,
--
--
--
--
--
--
+- E. D. Sontag, _Further facts about input to state stabilization_, IEEE Trans. Automat. Contr., 35 (1990), pp. 473-476. 
+- E. D. Sontag, _Input/output and state-space stability_, in New Trends in System Theory, Birkh~user, Boston, 1991. 
+- I. M. Y. Mareels and D. J. Hill, _Monotone stability of nonlinear feedback systems_, J. Math. Syst. Estim. Contr., 2 (1992), pp. 275-291. 
+- Y. Lin, E. D. Sontag, and Y. Wang, _Recent results on Lyapunov-theoretic techniques for nonlinear stability_, in Proceedings of the 1994 American Control Conference, Baltimore, Maryland, June 1994, pp. 1771-1775. 
+- L. Praly and Z.-P. Jiang, _Stabilization by output feedback for systems with ISS inverse dynamics_, Syst. Contr. Lett., 21 (1993), pp. 19-33. 
+- A. R. Teel and L. Praly, _On output feedback stabilization for systems with ISS inverse dynamics and uncertainties_, in Proceedings of the 32nd IEEE Conference on Decision and Control, San Antonio, Texas, Dec. 1993, pp. 1942-1947. 
+- A. R. Teel, _A nonlinear small gain theorem for the analysis of control systems with saturation_, IEEE Trans. Automat. Contr., (1994). To appear. 
+- Z.-P. Jiang, A. R. Teel, and L. Praly, _Small-gain theorem for ISS systems and applications_, Math. Control Signals Systems, 7 (1994), pp. 95-120. 
+- E. D. Sontag, _State-space and I/O stability for nonlinear systems_, in Feedback Control, Nonlinear Systems, and Complexity, B. A. Francis and A. R. Tannenbaum, eds., Lecture Notes in Control and Information Sciences, Springer-Verlag, Berlin, 1995, pp. 215-235. 
+- E. D. Sontag AND Y. Wang, _On characterizations of the input-to-state stability property_, Syst. Contr. Lett., 24 (1995), pp. 351-359. 
+- E. D. Sontag AND Y. Wang, _New characterizations of input-to-state stability_, in Proceedings of the Conference on Information Sciences and Systems, Princeton, New Jersey, Mar. 1996. To appear. 
+- Z.-P. Jiang, I. Mareels, AND Y. Wang, A Lyapunov formulation of nonlinear small gain theorem for interconnected systems, in Proceedings of the IFAC Nonlinear Control Systems Design Symposium, Tahoe City, California, June 1995, pp. 666-671. 
+
+
+
+
+
+
 
 
 
