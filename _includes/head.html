@@ -33,6 +33,10 @@
         }
       });
   </script>
+  
+  {% if page.use_math %}
+  {% include mathjax_support.html %}
+  {% endif %}
 
   <!-- Google Analytics -->
   {% include google-analytics.html %}
