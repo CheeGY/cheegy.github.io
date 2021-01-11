@@ -9,7 +9,7 @@ tags:
 image: post5.jpg
 use_math: true
 ---
-This note provides key ideas and takeaways from Chapter 1 of the book, "Robust Nonlinear Control Design", by R. Freeman and P. Kokotovic. For each idea/concept presented, explicit references (titles, authors etc.) are given immediately after they are discussed. This is to facilitate referencing and search in the future.
+This note provides key ideas and takeaways from Chapter 1 of the book, "Robust Nonlinear Control Design", by R. Freeman and P. Kokotovic. For each idea/concept presented, references are stated explicitly (titles, authors etc.). This is to facilitate referencing and search in the future.
 
 ---
 
