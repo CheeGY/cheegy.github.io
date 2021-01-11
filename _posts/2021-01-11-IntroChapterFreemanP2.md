@@ -42,10 +42,10 @@ Hence, the authors introduce the concept of a **robust control Lyaunov function*
 For a general nonlinear system $\dot{x} = f(x,u)$ and cost functional $J = \int_0^{\infty} L(x,u) dt$, getting the optimal solution with respect to the dynamics and cost involves solving a steady-state Hamilton-Jacobi-Isaacs (HJI) partial differential equation, i.e.,
 
 $$
-min_u max_w \left[ L(x,u) + \nabla V(x) \cdot f(x,u,w) \right] = 0,
+\min_u \max_w \left[ L(x,u) + \nabla V(x) \cdot f(x,u,w) \right] = 0,
 $$
 
-where $w$ is the uncertainty and the unknown variable is $V(x)$, also known as the value function. Appropriate choices of $L(x,u)$ lies to smooth, positive definite solutions $V(x)$ and optimal, robust state feedback control laws $u(x)$.
+where $w$ is the uncertainty and the unknown variable is $V(x)$, also known as the value function. Appropriate choices of $L(x,u)$ leads to smooth, positive definite solutions $V(x)$ and in turn, optimal, robust state feedback control laws $u(x)$.
 
 However, this is often difficult to compute. Looking from another perspective, if we can find a meaningful cost functional such that the given robust control Lyapunov function is its value function, then the control law would also inherit the benefits of optimality. This approach is known as an _inverse_ optimal robust stabilization problem. Inverse problems are long standing in optimal control and references can be found here:
 
