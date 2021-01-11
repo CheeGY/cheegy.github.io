@@ -15,7 +15,7 @@ This is a continuation of the presentation of key ideas from Chapter 1 of the bo
 
 ## Lyapunov Framework for Robust Control (cont'd)
 
-Given a robust control problem, the next step is to find necessary and sufficient conditions for the stability of its solution. In the context of nonlinear systems, this corresponds to the existence of a Lyapunov function. Not only does Lyapunov functions guarantee stability of these systems, they also act as useful design tools.  In particular, control Lyapunov functions achieve this purpose. A control Laypunov function for the system $\dot{x} = f(x,u)$ is given as a candidate Lyapunov function $V(x)$ such that for every fixed $x$, there exists an admissible $u$ satisfying $\Nabla V(x) \dot{x} = \Nabla V(x) \dot f(x,u) < 0$.  For a continuous $f$ and with a continuous state feedback control law such that $x=0$ is globally asympotically stable, then by converse Lyapunov theorems, there exist such a control Lyapunov function. Furthermore, if $f$ is affine in $u$, then having a control Lyapunov function is sufficient for stabilizability for continuous state feedback.
+Given a robust control problem, the next step is to find necessary and sufficient conditions for the stability of its solution. In the context of nonlinear systems, this corresponds to the existence of a Lyapunov function. Not only does Lyapunov functions guarantee stability of these systems, they also act as useful design tools.  In particular, control Lyapunov functions achieve this purpose. A control Laypunov function for the system $\dot{x} = f(x,u)$ is given as a candidate Lyapunov function $V(x)$ such that for every fixed $x$, there exists an admissible $u$ satisfying $\nabla V(x) \dot{x} = \nabla V(x) \dot f(x,u) < 0$.  For a continuous $f$ and with a continuous state feedback control law such that $x=0$ is globally asympotically stable, then by converse Lyapunov theorems, there exist such a control Lyapunov function. Furthermore, if $f$ is affine in $u$, then having a control Lyapunov function is sufficient for stabilizability for continuous state feedback.
 
 ### Control Lyapunov functions and related stability results
 - Z. Artstein, _Stabilization with relaxed controls_, Nonlinear Anal., 7 (1983), pp. 1163-1173. 
@@ -36,7 +36,7 @@ Hence, the authors introduce the concept of a **robust control Lyaunov function*
 
 For a general nonlinear system $\dot{x} = f(x,u)$ and cost functional $J = \int_0^{\infty} L(x,u) dt$, getting the optimal solution with respect to the dynamics and cost involves solving a steady-state Hamilton-Jacobi-Isaacs (HJI) partial differential equation, i.e.,
 $$
-min_u max_w \left[ L(x,u) + \Nabla V(x) \dot f(x,u,w) \right] = 0,
+min_u max_w \left[ L(x,u) + \nabla V(x) \dot f(x,u,w) \right] = 0,
 $$
 where $w$ is the uncertainty and the unknown variable is $V(x)$, also known as the value function. Appropriate choices of $L(x,u)$ lies to smooth, positive definite solutions $V(x)$ and optimal, robust state feedback control laws $u(x)$.
 
