@@ -7,7 +7,6 @@ tags:
 - robust control
 - nonlinear control
 image: post6.jpg
-use_math: true
 ---
 This is a continuation of the presentation of key ideas from Chapter 1 of the book, "Robust Nonlinear Control Design", by R. Freeman and P. Kokotovic. For each idea/concept presented, references are stated explicitly (titles, authors etc.). This is to facilitate referencing and search in the future.
 
@@ -18,8 +17,8 @@ This is a continuation of the presentation of key ideas from Chapter 1 of the bo
 Given a robust control problem, the next step is to find necessary and sufficient conditions for the stability of its solution. In the context of nonlinear systems, this corresponds to the existence of a Lyapunov function. Not only does Lyapunov functions guarantee stability of these systems, they also act as useful design tools.  In particular, control Lyapunov functions achieve this purpose. A control Laypunov function for the system $\dot{x} = f(x,u)$ is given as a candidate Lyapunov function $V(x)$ such that for every fixed $x$, there exists an admissible $u$ satisfying 
 
 $$
-\nabla V(x) \dot{x} = \nabla V(x) \dot f(x,u) < 0
-$$. 
+\nabla V(x) \dot{x} = \nabla V(x) \dot f(x,u) < 0.
+$$ 
 
 If $f$ is continuous and if there exist a continuous state feedback control law such that $x=0$ is globally asympotically stable, then by converse Lyapunov theorems, there exist such a control Lyapunov function. Furthermore, if $f$ is affine in $u$, then having a control Lyapunov function is sufficient for stabilizability for continuous state feedback.
 
