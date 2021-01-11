@@ -22,7 +22,7 @@ Given a robust control problem, the next step is to find necessary and sufficien
 - E. D. Sontag, _A Lyapunov-like characterization of asymptotic controllability_, SIAM J. Contr. Optimiz., 21 (1983), pp. 462-471
 - E. D. Sontag, _A 'universal' construction of Artstein's theorem on nonlinear stabilization_, Syst. Contr. Lett., 13 (1989), pp. 117-123. 
 
-In the case of robust nonlinear control, a control Lyapunov function is inadequate because:
+However, in the case of robust nonlinear control, a control Lyapunov function is inadequate because:
 - There are two input sources from the controller $K$ and uncertainty $\Delta$
 - Control Lyapunov functions applies to state feedback only
 
@@ -35,9 +35,11 @@ Hence, the authors introduce the concept of a **robust control Lyaunov function*
 ## Inverse Optimality in Robust Stabilization
 
 For a general nonlinear system $\dot{x} = f(x,u)$ and cost functional $J = \int_0^{\infty} L(x,u) dt$, getting the optimal solution with respect to the dynamics and cost involves solving a steady-state Hamilton-Jacobi-Isaacs (HJI) partial differential equation, i.e.,
+
 $$
 min_u max_w \left[ L(x,u) + \nabla V(x) \dot f(x,u,w) \right] = 0,
 $$
+
 where $w$ is the uncertainty and the unknown variable is $V(x)$, also known as the value function. Appropriate choices of $L(x,u)$ lies to smooth, positive definite solutions $V(x)$ and optimal, robust state feedback control laws $u(x)$.
 
 However, this is often difficult to compute. Looking from another perspective, if we can find a meaningful cost functional such that the given robust control Lyapunov function is its value function, then the control law would also inherit the benefits of optimality. This approach is known as an _inverse_ optimal robust stabilization problem. Inverse problems are long standing in optimal control and references can be found here:
@@ -60,7 +62,7 @@ However, this is often difficult to compute. Looking from another perspective, i
 - H. Hermes, _Asymptotically stabilizing feedback controls_, J. Differential Equations, 92 (1991), pp. 76-89. 
 - H. Hermes, _Asymptotically stabilizing feedback controls and the nonlinear regulator problem_, SIAM J. Contr. Optimiz., 29 (1991), pp. 185-196. 
 
-The approach to solve this inverse problem in this book is to pose it as a two-person zero-sum differential game, referenced from
+In this book, the approach to solve this inverse problem is to pose it as a two-person zero-sum differential game, referenced from
 - T. Basar AND G. J. Olsder, _Dynamic Noncooperative Game Theory_, Academic Press, London, 1982. 
 
 ---
@@ -73,7 +75,7 @@ In Lyapunov redesign or min-max design, a control Lyapunov function is used as t
 - H. K. Khalil, _Nonlinear Systems, Prentice Hall, Upper Saddle River, New Jersey, second ed., 1996. 
 - M. W. Spong AND M. Vidyasagar, _Robot Dynamics and Control_, John Wiley & Sons, New York, 1989. 
 
-These matching conditions are quite restrictive and hence there have been work to weaken these conditions,
+These matching conditions are quite restrictive and hence, there exist articles that discuss the weakening of these conditions,
 - J. S. Thorp AND B. R. Barmish, _On guaranteed stability of uncertain linear systems via linear control_, J. Optimiz. Theory Appl., 35 (1981), pp. 559-579. 
 - B. R. Barmish AND G. Leitmann, _On ultimate boundedness control of uncertain systems in the absence of matching conditions_, IEEE Trans. Automat. Contr., 27 (1982), pp. 153-158. 
 - Y. H. Chen AND G. Leitmann, _Robustness of uncertain systems in the absence of matching assumptions_, Int. J. Contr., 45 (1987), pp. 1527-1542. 
@@ -90,14 +92,14 @@ and its recursive form, also known as integrator backstepping, or simply backste
 - P. V. Kokotovic, _The joy of feedback: Nonlinear and adaptive_, IEEE Control Systems Magazine, 12 (1992), pp. 7-17. 
 - M. Krstic, I. Kanellakopoulos, AND P. V. Kokotovic, _Nonlinear and Adaptive Control Design_, John Wiley & Sons, New York, 1995. 
 
-For the nonlinear robust control problem in this book, backstepping leads to a structural strict feedback condition, under which a robust control Lyapunov function can be constructed systematically. References for this robust form of backstepping can be found in
+For the nonlinear robust control problem formulated in this book, backstepping leads to a structural strict feedback condition, under which a robust control Lyapunov function can be constructed systematically. References for this robust form of backstepping can be found in
 - R. A. Freeman AND P. V. Kokotovic, _Backstepping design of robust controllers for a class of nonlinear systems_, in Proceedings of the IFAC Nonlinear Control Systems Design Symposium, Bordeaux, France, June 1992, pp. 307-312. 
 - R. Marino AND P. Tomei, _Robust stabilization or feedback linearizable time-varying uncertain nonlinear systems_, Automatica, 29 (1993), pp. 181-189. 
 - R. Marino AND P. Tomei, _Nonlinear Control Design: Geometric, Adaptive, and Robust_, Prentice Hall, London, 1995.
 - Y. H. Chen AND G. Leitmann, _Robustness of uncertain systems in the absence of matching assumptions_, Int. J. Contr., 45 (1987), pp. 1527-1542. 
 - Z. Qu, _Robust control of nonlinear uncertain systems under generalized matching conditions_, Automatica, 29 (1993), pp. 985-998.  
 
-A main concern with robust backstepping is the application of high gains, which causes high magnitude chattering in the control input. In this book, a flattened robust control Lyapunov function is introduced to reduce this chattering effect.
+A main concern with robust backstepping is the application of high gains, which causes high magnitude chattering in the control input. To overcome this, a flattened robust control Lyapunov function is introduced to reduce this chattering effect.
 
 
 
