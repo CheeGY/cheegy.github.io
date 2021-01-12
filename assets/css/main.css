@@ -22,6 +22,7 @@ body {
   font-size: 18px;
   color: #515151;
   line-height: 1.75rem;
+  text-align: justify;
 }
 
 @media (max-width: 30em) {
@@ -352,7 +353,7 @@ table, th, td {
 
 th, td {
   padding: 15px;
-  text-align: justify;
+  text-align: left;
 }
 
 /*
